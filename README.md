@@ -2,17 +2,19 @@
 
 My collection of exercises and scripts from the [PY4E course](https://www.py4e.com/) by Dr. Chuck.
 
-## **📂 Completed Lessons**
+## **📂 Completed Lessons**: 
 
-**Chapter 01-03: Basics & Control Flow** — Introduction to variables, expressions, and logical branching using if/else statements.
+**Lessons 01-03: Basics & Control Flow** — Introduction to variables, expressions, and logical branching using if/else statements.
 
-**Chapter 04: Functions** — Learning code reusability, defining functions, and understanding arguments/parameters.
+**Lesson 04: Conditional execution** - Boolean expressions, logical structures, error handling with 'try' and 'except'
 
-**Chapter 05: Iteration** — Mastering loops (for and while), using break and continue to control program flow.
+**Lesson 05: Functions** — Learning code reusability, defining functions, and understanding arguments/parameters.
 
-**Chapter 06: Strings** — String manipulation, slicing, and using built-in methods like .find() and .upper().
+**Chapter 06: Loops and Iteration** — Mastering loops (for and while), using break and continue to control program flow.
 
-**Chapter 07: Files** — Handling external text data, memory-efficient line-by-line parsing.
+**Chapter 07: Strings** — String manipulation, slicing, and using built-in methods like .find() and .upper().
+
+**Chapter 08: Files** — Handling external text data, memory-efficient line-by-line parsing.
 
 ## **📂 Current & Next Steps**
 
