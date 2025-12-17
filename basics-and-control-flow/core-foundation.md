@@ -47,8 +47,30 @@ The type of data determines what operations can be performed on it.
 * **float:** Floating-point numbers (decimals).
 * **str:** Strings (text).
 
+
+
 **Essential Functions:**
 * `type()` — Check the data type of a variable.
 * `int()`, `float()`, `str()` — Convert data from one type to another.
 * `input()` — **Always** returns data as a `string`.
 
+Conditional statements allow us to change the flow of the program based on certain criteria. This is the heart of automated decision-making in scripts.
+
+### Boolean Expressions
+A boolean expression is an expression that is either **True** or **False**. Python uses standard comparison operators:
+* `==` : Equal to
+* `!=` : Not equal to
+* `>` : Greater than
+* `<` : Less than
+* `>=` : Greater than or equal to
+* `<=` : Less than or equal to
+
+### Logical Structures
+1. **Simple If:** Executes code only if the condition is True.
+2. **If-Else:** Provides an alternative path if the condition is False.
+3. **Multi-way (If-Elif-Else):** Checks multiple conditions in order. Once one is True, the rest are skipped.
+
+
+
+### Error Handling with `try` and `except`
+This is a "safety net" for your code. If a block of code inside `try` fails, Python jumps to the `except` block instead of crashing.
