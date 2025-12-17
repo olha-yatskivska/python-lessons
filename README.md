@@ -1,6 +1,6 @@
 # **🐍 Python for Everybody (PY4E) Learning Progress**
 
-My collection of exercises and scripts from the [PY4E course](https://www.py4e.com/) by Dr. Chuck.
+My collection of exercises and scripts from the [PY4E course](https://www.py4e.com/lessons) by Dr. Chuck.
 
 ## **📂 Completed Lessons**
 
