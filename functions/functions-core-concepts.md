@@ -33,7 +33,7 @@
 * Indent the body ot the function.
 * This defines the function but doesn't execute the body of the function.
 
-e.g. **[Print Lyrics](https://github.com/olha-yatskivska/python-lessons/functions/print/lyrics.py)**  
+e.g. **[Print Lyrics](https://github.com/olha-yatskivska/python-lessons/functions/exercises/print-lyrics.py)**  
 
 ---
 
