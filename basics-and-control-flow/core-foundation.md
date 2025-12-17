@@ -1,4 +1,4 @@
-# 🐍 Lessons 01-03: Python Basics & Numeric Expressions
+# 🐍 Chapter 01-03: Python Basics & Numeric Expressions
 
 This section covers the core foundation of the language: from naming conventions to mathematical operations and handling user input.
 
