@@ -142,4 +142,13 @@ print('Done!')
 * for thing in data: look for something or do something to each entry separately, updating a variable.
 * Look at the variables.
 
+---
+
+## The is and is not operators
+* Python has an is operator that can be used in logical expressions.
+* Implies "is the same as".
+* Similar to, but stronger than ==.
+* is not also is a logical operator.
+---
+
 
