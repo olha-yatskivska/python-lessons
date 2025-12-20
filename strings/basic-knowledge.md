@@ -69,6 +69,48 @@ for letter in 'banana' :
 * We can also look at any continuous section of a string using a **colon operator**.
 * The second number is one beyond the end of the slice - "up to but not including".
 * If the second number is beyond the end of the string, it stops at the end.
+* If we leave off the first number or the last number of the slice, it is assumed to be the beginning or end of the string respectively. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/strings/exercises/slicing-strings.py)
+---
+# String Concatenation
+* When the **+** operator is applied to strings, it means **"concatenation"**. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/strings/exercises/string-concatenation.py)
 
-[Program](https://github.com/olha-yatskivska/python-lessons/blob/main/strings/exercises/slicing-strings.py)
-  
+---
+# Using in as a Logical Operator
+* The **in** keyword can alsi be used to check to see if one string is in another string.
+* The **in** expression is a logical expression that return *True* or *False* and can be used in an *if* statement. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/strings/exercises/logical-operator.py)
+* [String Comparison](https://github.com/olha-yatskivska/python-lessons/tree/main/strings/exercises)
+---
+# String Library
+* Python has a number of string functions wch are in the strinh library.
+* These *functions* are already *build into* every string - we invoke them by appending the function to the string variable.
+* These *functions* do not modify the original string, instead they return a new string that has been altered.
+[Library](https://docs.python.org/3/library/stdtypes.html#string-methods)
+```python
+str.capitalize()
+str.center(wigth[, fillchar])
+str.endswith(suffix[, start[, end]])
+str.lstripo([chars])
+str.replace(old, new[, count])
+str.lower()
+str.rstrip([chars])
+str.strip([chars])
+str.upper()
+```
+---
+# Searching a String
+* We use the **find()** function to search for a substring within another string.
+* **find()** finds the first occurrence of the substring.
+* If the subscring is not found, **find()** returns -1.
+* Remember that string position starts at zero. [Program](https://github.com/olha-yatskivska/python-lessons/tree/main/strings/exercises).
+* Often when we are searching for a string using **find()** we first convert the string to lower case so we can search a string regardless of case. [Program](https://github.com/olha-yatskivska/python-lessons/tree/main/strings/exercises)
+---
+# Search and Replace
+* The **replace()** function is like a "search and replace" operation in a word processor.  
+* It replaces *all occurrences* of the search string with replacement string [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/strings/exercises/search-and-replace.py)
+
+---
+## Stripping Whitespace
+* **lstrip()** and **rstrip()** remove whitespace at the left or right.
+* **strip()** remove both beginning and ending whitespace. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/strings/exercises/stripping-whitespace.py)
+---
+> In Python 3 all strings are Unicode
