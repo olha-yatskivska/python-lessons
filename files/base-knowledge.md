@@ -1,19 +1,21 @@
 # 🐍  Files In Python
 
 ---
-> **File Processing**: A text file can be thought of as a sequence of lines.
-> A text file has newlines at the end of each line (\n)
+> **File Processing**: A text file is a sequence of lines.
+> Each line ends with a special "newline" character (\n).
 ---
 ## Opening Files
-* The **open()** function tells Python which file we are going to work with and what we will be doing with the file.
-* Open() returns a *"file handle"* - variable used to perform operations on the file.
+* The open() function establishes a connection between Python and the file on your disk.
+* It returns a *"file handle"*  - a variable used to perform operations (read, write, close) on the file.
 ```python
 fhand = open('mbox.txt','r')
 ```
-* handle = open(filename, mode).
-* Returns a handle use to manipulate the file.
-* Filename is a string.
-* Mode is optional and should be 'r' - read or 'w' write.
+* **Syntax:** handle = open(filename, mode).
+* **Filename:** A string representing the path to the file.
+* **Mode**: Optional. Common modes are 'r' (read) and 'w' (write).
+---
+> **The "Handle" Concept:** the handle is not the data itself, but a "pointer" or "connection" to the data.
+---
 
 ## Reading Files
 * A **file handle** open for read can be treated as a sequence of strings where each line in the file is a string in the sequence.
@@ -39,7 +41,7 @@ for cheese in xfile:
 ## Skipping with continue
 * We can conveniently skip a line by using the *continue* statement [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/skipping-with-continue.py)
 ---
-## Using in to Selct Lines
+## Using in to Select Lines
 * We can look for a string anywhere in a line as our selection criteria [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/using-in-to-select-line.py)
 * We can also prompt for File Name [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/prompt-for-file-name.py)
 ---
