@@ -26,7 +26,7 @@ xfile = open('mbox.txt')
 for cheese in xfile:
     print(cheese)
 ```
-* **Reading the "Whole" File**: We can read the whole file (newlines and all) into a single string [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/reading-whole-file.py)
+* **Reading the "Whole" File**: If the file is small, you can use .read() and read the whole file (newlines and all) into a single string [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/reading-whole-file.py)
 
 ---
 ## Counting Lines in a File
@@ -35,14 +35,16 @@ for cheese in xfile:
 * Count the lines and print out the number of lines [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/counting-lines-in-a%20file.py).
 ---
 ## Searching Through a File
-* We can put an if statement in our for loop to only print lines that meet som criteria.
-* We can strip the whitespace from the right-hand side of the string using rstrip() from the string library [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/searching-through-file.py)
+* **Filtering:** Use if statements inside the loop to find specific data (e.g., if line.startswith('From:')).
+* **rstrip():** When reading a file, each line has a newline (\n) at the end. The print() function adds another newline. Use line.rstrip() to remove the extra whitespace from the right side so your output isn't double-spaced.
+* **continue:** Use this to skip "uninteresting" lines and keep your code clean (the "guardian" pattern). [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/searching-through-file.py)
 ---
 ## Skipping with continue
 * We can conveniently skip a line by using the *continue* statement [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/skipping-with-continue.py)
 ---
 ## Using in to Select Lines
 * We can look for a string anywhere in a line as our selection criteria [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/using-in-to-select-line.py)
-* We can also prompt for File Name [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/prompt-for-file-name.py)
+* **Dynamic Filenames:** Use input() to let the user type the filename. 
+* **Reliability:** Always wrap open() in a try...except block to handle cases where the user types a filename that doesn't exist. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/prompt-for-file-name.py)
 ---
 
