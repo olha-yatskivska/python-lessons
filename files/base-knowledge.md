@@ -24,7 +24,23 @@ xfile = open('mbox.txt')
 for cheese in xfile:
     print(cheese)
 ```
+* **Reading the "Whole" File**: We can read the whole file (newlines and all) into a single string [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/reading-whole-file.py)
+
+---
 ## Counting Lines in a File
 * Open a file read-only.
 * Use a for loop to read each line.
-* Count the lines and print out the number of lines [Program]()
+* Count the lines and print out the number of lines [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/counting-lines-in-a%20file.py).
+---
+## Searching Through a File
+* We can put an if statement in our for loop to only print lines that meet som criteria.
+* We can strip the whitespace from the right-hand side of the string using rstrip() from the string library [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/searching-through-file.py)
+---
+## Skipping with continue
+* We can conveniently skip a line by using the *continue* statement [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/skipping-with-continue.py)
+---
+## Using in to Selct Lines
+* We can look for a string anywhere in a line as our selection criteria [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/using-in-to-select-line.py)
+* We can also prompt for File Name [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/files/exercises/prompt-for-file-name.py)
+---
+
