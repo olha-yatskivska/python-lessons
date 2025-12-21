@@ -1,4 +1,4 @@
-fname = input('Enter the file nam: ')
+fname = input('Enter the file name: ')
 fhand = open(fname)
 count = 0
 for line in fhand: 
