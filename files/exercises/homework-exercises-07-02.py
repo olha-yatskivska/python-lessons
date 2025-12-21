@@ -19,5 +19,7 @@ for line in fh:
         value = line_s[20:27]
         count = count + 1
         f_value = float(value)
-        total = total + f_value    
-print("Average spam confidence:",total/count)
+        total = total + f_value 
+        average = total/count
+        average_round = round(average, 12)
+print("Average spam confidence:",average_round)
