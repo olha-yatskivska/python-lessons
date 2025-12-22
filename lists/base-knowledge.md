@@ -63,7 +63,14 @@ Glenn
 * We can create a new list by adding two existing lists together. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/lists/exercises/concatenating.py)
 ---
 ## Lists Can be Sliced
-* Just like in strings, the second number is "up to but not including" [1:3] [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/lists/exercises/sliced-lists.py)
+* Just like in strings, the second number is "up to but not including"
+```python
+t = [9, 41, 12, 3, 74, 15]
+t = [1:3]
+t = [:4]
+t = [3:]
+t = [:]
+```
 ---
 ## List Methods
 
