@@ -21,10 +21,12 @@ print(test_me)
 
 
 def middle(t):
-  return t[1:-1]
   if len(t) < 2:
-    print('Give me more numbers')
-    quit()
+     print('Give me more numbers')
+     quit()
+  else: 
+    return t[1:-1]
+ 
     
   
 test_me = one_element
