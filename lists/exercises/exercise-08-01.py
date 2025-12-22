@@ -6,10 +6,12 @@ one_element = [7]
 
 def chop(t):
   del t[0]
-  del t[-1] 
+  
   if len(t) < 2:
     print('Give me more numbers')
     quit()
+  else: 
+    del t[-1] 
     
 
 test_me = one_element
