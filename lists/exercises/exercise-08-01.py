@@ -9,6 +9,7 @@ def chop(t):
   del t[-1] 
   if len(t) < 2:
     print('Give me more numbers')
+    quit()
     
 
 test_me = one_element
@@ -21,6 +22,7 @@ def middle(t):
   return t[1:-1]
   if len(t) < 2:
     print('Give me more numbers')
+    quit()
     
   
 test_me = one_element
