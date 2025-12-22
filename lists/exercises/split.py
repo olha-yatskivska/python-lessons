@@ -8,3 +8,9 @@ for line in fhand:
   if not line.startswith('From ') : continue 
   words = line.split()
   print(words[2])
+
+#the double split pattern
+# 1. words = line.split()
+email = words[1]
+pieces = email.split('@')
+print(pieces[1])
