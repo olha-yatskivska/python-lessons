@@ -11,4 +11,11 @@ print(numbers)
 
 
 
+def middle(t):
+  return t[1:4]
+  
+numbers = [5, 6, 7, 8, 9]
+middle(numbers)
+print(numbers)
 
+  
