@@ -7,7 +7,7 @@ def chop(t):
 
 numbers = [5, 6, 7, 8, 9]
 chop(numbers)
-print()
+print(numbers)
 
 
 
