@@ -2,13 +2,13 @@
 # Then write a function called middle that takes a list and returns a new list that contains all but the first and last elements.
 numbers = [5, 6, 7, 8, 9]
 min_numbers = [5, 6]
-
+one_element = [7]
 
 def chop(t):
   del t[0]
   del t[-1] 
 
-test_me = min_numbers
+test_me = one_element
 chop(test_me)
 print(test_me)
 
@@ -17,7 +17,7 @@ print(test_me)
 def middle(t):
   return t[1:-1]
   
-test_me = min_numbers
+test_me = one_element
 rest = middle(test_me)
 print(rest)
 
