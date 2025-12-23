@@ -3,6 +3,7 @@
 numbers = [5, 6, 7, 8, 9]
 min_numbers = [5, 6]
 one_element = [7]
+letters = ['a', 'b', 'c', 'd', 'e']
 
 def chop(t):
    if len(t) < 2:
@@ -13,7 +14,7 @@ def chop(t):
     del t[-1] 
     
 
-test_me = numbers
+test_me = letters
 chop(test_me)
 print(test_me)
 
@@ -28,8 +29,8 @@ def middle(t):
  
     
   
-test_me = numbers
-rest = middle(test_me)
+test_me = letters
+rest = middle(letters)
 print(rest)
 
   
