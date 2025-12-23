@@ -108,3 +108,10 @@ t = [:]
 ----
 ## Using split to parse strings
 * Sometimes we split a line one way, and then grab one of the pieces of the line and split that piece again. [Product](https://github.com/olha-yatskivska/python-lessons/blob/main/lists/exercises/split.py)
+
+---
+
+## ⚠️ Read the documentation
+> * The methods and operators that lists share with other sequences (like strings) are documented at:  [Library](https://docs.python.org/3/library/stdtypes.html#common-sequence-operations)
+> * The methods and operators that only apply to mutable sequences are documented at: [Library](https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types)
+---
