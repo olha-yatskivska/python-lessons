@@ -141,7 +141,7 @@ t = t + x              # WRONG!
 orig = t[:]
 t.sort()
 ```
-* **Lists, split, and files:**  it is a good idea to revisit the guardian pattern when it comes to writing programs that read through a file and look for a “needle in the haystack”.  The best place to add the print statement is right before the line where the program failed and print out the data that seems to be causing the failure. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/lists/exercises/dow.py)
+* **Lists, split, and files:**  it is a good idea to revisit the guardian pattern when it comes to writing programs that read through a file and look for a “needle in the haystack”.  The best place to add the print statement is right before the line where the program failed and print out the data that seems to be causing the failure. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/lists/exercises/exercises-08-02-03.py)
 ```python
 fhand = open('mbox-short.txt')
 count = 0
