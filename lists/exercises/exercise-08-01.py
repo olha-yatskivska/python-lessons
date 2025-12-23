@@ -9,7 +9,7 @@ def chop(t):
   
   if len(t) < 2:
     print('Give me more numbers')
-    quit()
+    return
   else: 
     del t[-1] 
     
@@ -23,7 +23,7 @@ print(test_me)
 def middle(t):
   if len(t) < 2:
      print('Give me more numbers')
-     quit()
+     return
   else: 
     return t[1:-1]
  
