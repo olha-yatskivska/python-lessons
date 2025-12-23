@@ -5,16 +5,15 @@ min_numbers = [5, 6]
 one_element = [7]
 
 def chop(t):
-  del t[0]
-  
-  if len(t) < 2:
+   if len(t) < 2:
     print('Give me more numbers')
     return
   else: 
+    del t[0]
     del t[-1] 
     
 
-test_me = one_element
+test_me = numbers
 chop(test_me)
 print(test_me)
 
@@ -29,7 +28,7 @@ def middle(t):
  
     
   
-test_me = one_element
+test_me = numbers
 rest = middle(test_me)
 print(rest)
 
