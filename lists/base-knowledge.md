@@ -111,7 +111,45 @@ t = [:]
 
 ---
 
+
+## Best practice
+* **Don’t forget that most list methods modify the argument and return None:**
+```python
+word = word.strip()
+t = t.sort()           # WRONG!
+```
+---
 ## ⚠️ Read the documentation
 > * The methods and operators that lists share with other sequences (like strings) are documented at:  [Library](https://docs.python.org/3/library/stdtypes.html#common-sequence-operations)
 > * The methods and operators that only apply to mutable sequences are documented at: [Library](https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types)
 ---
+
+* **Pick an idiom and stick with it:**  there are too many ways to do things with lists. For example, remove an element from a list, you can use pop, remove, del, or even a slice assignment. To add an element, you can use the append method or the + operator.
+```python
+ # these are right:
+t.append(x)
+t = t + [x]
+
+# And these are wrong:
+t.append([x])          # WRONG!
+t = t.append(x)        # WRONG!
+t + [x]                # WRONG!
+t = t + x              # WRONG!
+```
+* **Make copies to avoid aliasing:** If you want to use a method like sort that modifies the argument, but you need to keep the original list as well, you can make a copy.
+```python
+orig = t[:]
+t.sort()
+```
+* **Lists, split, and files:**  it is a good idea to revisit the guardian pattern when it comes to writing programs that read through a file and look for a “needle in the haystack”.  The best place to add the print statement is right before the line where the program failed and print out the data that seems to be causing the failure. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/lists/exercises/dow.py)
+```python
+fhand = open('mbox-short.txt')
+count = 0
+for line in fhand:
+    words = line.split()
+    # print('Debug:', words)
+    if len(words) == 0 : continue
+    if words[0] != 'From' : continue
+    print(words[2])
+```
+
