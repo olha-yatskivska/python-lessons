@@ -25,7 +25,7 @@ def middle(t):
      print('Give me more numbers')
      return
   else: 
-    return t[1:-1]
+    t[1:-1]
  
     
   
