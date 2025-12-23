@@ -8,7 +8,7 @@ def chop(t):
    if len(t) < 2:
     print('Give me more numbers')
     return
-  else: 
+   else: 
     del t[0]
     del t[-1] 
     
