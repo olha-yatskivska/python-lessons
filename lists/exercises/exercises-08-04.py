@@ -5,8 +5,8 @@
 fname = input("Enter file name: ")
 fh = open(fname)
 for line in fh:
-  line = fh.split()
-  print(line)
+  words = line.split()
+  print(words)
   # words = line.split()
   #for word in words 
 #print(line(rstrip())
