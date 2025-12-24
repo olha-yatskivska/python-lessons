@@ -14,7 +14,7 @@ fh = open(fname)
 count = 0
 for line in fh:
     words = line.split()
-    if len(words) < 3: continue or if words[0] != 'From': 
+    if len(words) < 3 or if words[0] != 'From': 
         continue
 print(words)
 
