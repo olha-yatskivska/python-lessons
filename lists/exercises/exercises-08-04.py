@@ -6,8 +6,9 @@ fname = input("Enter file name: ")
 fh = open(fname)
 lst = list()
 for line in fh:
-  word = line.split()
-  print(word)
+  words = line.split()
+  print(words)
+  word = words.split()
   lst = list()
   if word not in lst:
     lst.append(word)
