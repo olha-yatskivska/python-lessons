@@ -7,7 +7,7 @@ fh = open(fname)
 lst = list()
 for line in fh:
   words = line.split()
-  print(words(rstrip())
+  print(words(rstrip()))
 #if word not in lst:
  # lst.append(word)
   #print(lst)
