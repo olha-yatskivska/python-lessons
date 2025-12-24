@@ -10,8 +10,12 @@
 fname = input("Enter file name: ")
 if len(fname) < 1:
     fname = "mbox-short.txt"
-
-#fh = open(fname)
-#count = 0
+fh = open(fname)
+count = 0
+for line in fh:
+    words = line.split()
+    if len(words) < 3: continue or if words[0] != 'From': 
+        continue
+print(words)
 
 #print("There were", count, "lines in the file with From as the first word")
