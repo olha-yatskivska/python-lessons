@@ -2,15 +2,14 @@
 # The program should build a list of words. For each word on each line check to see if the word is already in the list and if not append it to the list. 
 #When the program completes, sort and print the resulting words in python sort() order as shown in the desired output.
 
-fname = input("Enter file name: ")
-fh = open(fname)
+fname = input("Enter file name: ") 
+fh = open(fname) 
 lst = list()
 for line in fh:
   words = line.split()
-  word = words[]
-if word not in lst:
-  lst.append(word)
-  
+  for word in words:
+    if word not in lst:
+      lst.append(word)
 lst.sort()
 print(lst)
 
