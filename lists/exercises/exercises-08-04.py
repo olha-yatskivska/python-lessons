@@ -7,10 +7,10 @@ fh = open(fname)
 lst = list()
 for line in fh:
   words = line.split()
-  print(words)
-if word not in lst:
-  lst.append(word)
-  print(lst)
+  print(words(rstrip())
+#if word not in lst:
+ # lst.append(word)
+  #print(lst)
   # words = line.split()
   #for word in words 
 #print(line(rstrip())
