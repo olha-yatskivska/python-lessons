@@ -4,9 +4,11 @@
 
 fname = input("Enter file name: ")
 fh = open(fname)
-
 for line in fh:
   line = fh.split()
-print(line)
+  print(line)
+  # words = line.split()
+  #for word in words 
+#print(line(rstrip())
 #lst = list()
 #lst.append('book')
