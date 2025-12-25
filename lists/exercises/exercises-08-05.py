@@ -24,7 +24,7 @@ for line in fh:
     count = 0
 while True:
         words[0] = 'From'              
-        count = count + 1g
+        count = count + 1
 print("There were", count, "lines in the file with From as the first word")      
 
  
