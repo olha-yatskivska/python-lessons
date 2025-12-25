@@ -17,7 +17,8 @@ for line in fh:
     words = line.split()
     if len(words) < 3 or words[0] != 'From':
         continue
-        count 
+        count = count + 1
+        #count.append(value)
     #print(line)
     print(words[1])
 print("There were", count, "lines in the file with From as the first word")      
