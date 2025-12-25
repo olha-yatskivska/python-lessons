@@ -17,7 +17,7 @@ for line in fh:
     if len(words) < 3 or words[0] != 'From':
         continue
         print('Last line:', line)
-    print(words[1])
+    #print(words[1])
         
 #count = 0 
  
