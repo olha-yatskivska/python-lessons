@@ -13,7 +13,7 @@ if len(fname) < 1:
 fh = open(fname)
 for line in fh:
     line = line.rstrip()
-    words = line.spli()
+    words = line.split()
     if len(words) < 3 or words[0] != 'From':
         continue
     print(words[1])
