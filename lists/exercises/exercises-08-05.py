@@ -16,7 +16,7 @@ for line in fh:
     words = line.split()
     if len(words) < 3 or words[0] != 'From':
         continue
-        print('Last line:', line)
+    print('Last line:', line)
     #print(words[1])
         
 #count = 0 
