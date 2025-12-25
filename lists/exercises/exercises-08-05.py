@@ -13,7 +13,7 @@ if len(fname) < 1:
 fh = open(fname)
 for line in fh:
     line = line.rstrip()
-    print('Last line:', line[-1])
+    print('Last line:', line)
     words = line.split()
     if len(words) < 3 or words[0] != 'From':
         continue
