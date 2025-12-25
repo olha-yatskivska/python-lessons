@@ -11,7 +11,7 @@ fname = input("Enter file name: ")
 if len(fname) < 1:
     fname = "mbox-short.txt"
 fh = open(fname)
-for line in fn:
+for line in fh:
     line = line.rstrip()
     words = line.spli()
     if len(words) < 3 or words[0] != 'From':
