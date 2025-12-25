@@ -11,13 +11,13 @@ fname = input("Enter file name: ")
 if len(fname) < 1:
     fname = "mbox-short.txt"
 fh = open(fname)
-for line in fn: 
+for line in fn:
     line = line.rstrip()
     words = line.spli()
-     if len(words) < 3 or words[0] != 'From': 
+    if len(words) < 3 or words[0] != 'From':
         continue
-        print(words[1])
-    print(line)
+    print(words[1])
+        
 #count = 0
    
    
