@@ -11,6 +11,7 @@ fname = input("Enter file name: ")
 if len(fname) < 1:
     fname = "mbox-short.txt"
 fh = open(fname)
+words = fh.split()
 count = 0
 for line in fh:
     words = line.split()
