@@ -45,7 +45,7 @@ KeyError: 'csev'
 >>> 'csev' in ccc
 False
 ```
-## The get method for dictionaries
+## Simplified counting with get() method
 * A **get() method** is for  checking  if a key is already in a dictionary and assuming a default value if the key is not there.
 * Default value if key does not exist (and no Traceback).
 
@@ -55,8 +55,10 @@ if name in counts:
 else :
   x = 0
 
+or can use next: 
 x = counts.get(name, 0)
 
+The same result:
 {'csev':2, 'zqian': 1, 'cwen': 2}
 ```
 
