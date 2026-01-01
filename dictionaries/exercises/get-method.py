@@ -1,4 +1,5 @@
 counts = dict()
 names = ['csev', 'cwen', 'csev', 'zqian', 'cwen']
-x = counts.get(name, 0)
+for name in names :
+  counts[name] = counts.get(name, 0) + 1
 print(counts)
