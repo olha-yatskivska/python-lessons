@@ -1,15 +1,8 @@
 # 🐍 Python Dictionaries
 ---
-> ## What is Collection?
-> * We have a bunch of values in a single "variable".
-> * We do this by having more one place "in" the variable.
-> * We have ways of finding the different places in the variable.
-> * **Variables:** have one value in them - when put a new value in the **variable** - the old value is overwritten -  x = 2.
-> * **List:** a linear collection of values. Lookup by position 0....length - 1.
-> * **Dictionary:** a linear collection of key-value pairs/ Lookup by "tag" or "key".
----
 
 ## Lists vs Dictionaties
+* **List:** a linear collection of values. Lookup by position 0....length - 1.
 * We append values to the end of a List and look them up by position.
 ```python
 >>> cards = list()
@@ -22,7 +15,9 @@
 >>> print(cards)
 [12, 5, 75]
 ```
+* **Dictionary:** a linear collection of key-value pairs looking up by "tag" or "key".
 * We insert values into a Dictionary using a key and retrieve them using a key.
+* Python 3.7 (2018) and later dixtionaries keep entries in the order they were inserted.
 ```python
 >>> cabinet = dict()
 >>> cabinet.['summer'] = 12
@@ -37,4 +32,6 @@
 {'summer': 12, 'fall': 5, 'spring': 75}
 ```
 ---
+## 
+
   
