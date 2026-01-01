@@ -32,6 +32,33 @@
 {'summer': 12, 'fall': 5, 'spring': 75}
 ```
 ---
-## 
+## Dictionary Tracebacks
+* It's an error to reference a key which is not in the dictionary.
+* We can use the **in** operator to see if a key is in a dictionary:
+
+```python
+>>> ccc = dict()
+>>> print(ccc['csev'])
+Traceback (most recent call last):
+  File "<stdin>", line ,, in <module>
+KeyError: 'csev'
+>>> 'csev' in ccc
+False
+```
+## The get method for dictionaries
+* A **get() method** is for  checking  if a key is already in a dictionary and assuming a default value if the key is not there.
+* Default value if key does not exist (and no Traceback).
+
+```python
+if name in counts:
+  x = counts[name]
+else :
+  x = 0
+
+x = counts.get(name, 0)
+
+{'csev':2, 'zqian': 1, 'cwen': 2}
+```
+
 
   
