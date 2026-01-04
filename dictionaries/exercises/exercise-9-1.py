@@ -3,7 +3,7 @@
 # Then you can use the in operator as a fast way to check whether a string is in the dictionary
 
 
-name = "mbox-short.txt"
+name = "words.txt"
 handle = open(name)
 
 new_dict = dict()
