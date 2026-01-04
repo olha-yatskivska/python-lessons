@@ -61,6 +61,19 @@ x = counts.get(name, 0)
 The same result:
 {'csev':2, 'zqian': 1, 'cwen': 2}
 ```
+---
+## Counting Pattern
+* The general pattern to count the words in a line of text is to split the line into words, then loop through the words and use a dictionary to track the count of each word independently. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/dictionaries/exercises/counting-pattern.py)
+---
+## Definite Loops and Dictionaries
+* Even though dictionaries are not stored in order, we can write a for loop that goes through all the entries in dictionary and looks up the value [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/dictionaries/exercises/definite-loops.py)
 
+---
+## Retrieving Lists of Keys and Values
+* You can get a list of keys, values or items (both) from a dictionary [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/dictionaries/exercises/retrieving-lists-of-keys-and-values.py)
 
-  
+---
+## Two Iteration Variables
+* We loop through the key-value pairs in a dictionary using *two* iteration variables.
+* Each iteration, the first variable is the key and the second variable is the corresponding value for the key [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/dictionaries/exercises/find-the-largest.py)
+   
