@@ -1,5 +1,9 @@
 # 🐍 Python Dictionaries
 ---
+> * The function dict creates a new dictionary with no items.
+> * The curly brackets, {}, represent an empty dictionary. To add items to the dictionary, you can use square brackets.
+> * The association of a key and a value is called a key-value pair or sometimes an item.
+---
 
 ## Lists vs Dictionaties
 * **List:** a linear collection of values. Lookup by position 0....length - 1.
