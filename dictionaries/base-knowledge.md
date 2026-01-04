@@ -11,7 +11,7 @@
 >>> cards.append(75)
 >>> print(cards)
 [12, 3, 75]
->>> cards[1] + 2
+>>> cards[1] = cards[1] + 2
 >>> print(cards)
 [12, 5, 75]
 ```
@@ -20,9 +20,9 @@
 * Python 3.7 (2018) and later dixtionaries keep entries in the order they were inserted.
 ```python
 >>> cabinet = dict()
->>> cabinet.['summer'] = 12
->>> cabinet.['fall'] = 3
->>> cabinet.['spring'] = 75
+>>> cabinet['summer'] = 12
+>>> cabinet['fall'] = 3
+>>> cabinet['spring'] = 75
 >>> print(cabinet)
 {'summer': 12, 'fall': 3, 'spring': 75}
 >>> print(cabinet['fall'])
@@ -66,7 +66,7 @@ The same result:
 * The general pattern to count the words in a line of text is to split the line into words, then loop through the words and use a dictionary to track the count of each word independently. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/dictionaries/exercises/counting-pattern.py)
 ---
 ## Definite Loops and Dictionaries
-* Even though dictionaries are not stored in order, we can write a for loop that goes through all the entries in dictionary and looks up the value [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/dictionaries/exercises/definite-loops.py)
+* Historically, dictionaries were unordered, but now they maintain insertion order, we can write a for loop that goes through all the entries in dictionary and looks up the value [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/dictionaries/exercises/definite-loops.py)
 
 ---
 ## Retrieving Lists of Keys and Values
