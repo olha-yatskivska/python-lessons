@@ -10,7 +10,7 @@ new = dict()
 for line in handle:
   words = line.split()
   for word in words:
-    new[word] = True
+    new[word.lower()] = True
 
 print(new)
 
