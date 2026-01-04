@@ -14,6 +14,8 @@ for line in handle:
 
 print(new)
 
-searching = input('Enter a word:')
+searching = input('Enter a word:').lower()
 if searching in new:
   print("Find it!")
+else: 
+  print("Not found.")
