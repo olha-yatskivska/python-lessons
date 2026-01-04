@@ -5,7 +5,7 @@ counts = dict()
 for line in handle:
   words = line.split()
   for word in words:
-    counts[words] = counts.get(word,0) + 1
+    counts[word] = counts.get(word,0) + 1
 
 bigcount = None
 bigword = None
