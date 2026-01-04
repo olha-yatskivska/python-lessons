@@ -6,11 +6,11 @@
 name = "words.txt"
 handle = open(name)
 
-new_dict = dict()
+new = dict()
 for line in handle:
   words = line.split()
   for word in words:
-    new_dict[words] = new_dict.get(word,0) + 1
+    new[words] = new.get(word,0) + 1
 
-print(new_dict)
+print(new)
      
