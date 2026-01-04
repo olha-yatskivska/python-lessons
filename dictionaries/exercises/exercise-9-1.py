@@ -6,9 +6,10 @@
 name = "mbox-short.txt"
 handle = open(name)
 
-programs = dict()
+new_dict = dict()
+
  for line in handle:
   words = line.split()
    for word in words:
-     counts[words] = counts.get(word,0) + 1
+     new_dict[words] = counts.get(word,0) + 1
      
