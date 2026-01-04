@@ -14,5 +14,6 @@ for line in handle:
 
 print(new)
 
-if "programs" in new:
+searching = input('Enter a word:')
+if searching in new:
   print("Find it!")
