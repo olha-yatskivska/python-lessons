@@ -10,7 +10,7 @@ new = dict()
 for line in handle:
   words = line.split()
   for word in words:
-    new[words] = new.get(word,0) + 1
+    new[word] = new.get(word,0) + 1
 
 print(new)
      
