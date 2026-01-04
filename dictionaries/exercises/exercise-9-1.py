@@ -10,7 +10,9 @@ new = dict()
 for line in handle:
   words = line.split()
   for word in words:
-    new[word] = new.get(word,0) + 1
+    new[word] = True
 
 print(new)
-     
+
+if "programs" in new:
+  print("Find it!")
