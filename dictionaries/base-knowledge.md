@@ -71,6 +71,24 @@ The same result:
 ---
 ## Definite Loops and Dictionaries
 * Historically, dictionaries were unordered, but now they maintain insertion order, we can write a for loop that goes through all the entries in dictionary and looks up the value [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/dictionaries/exercises/definite-loops.py)
+* To find all the entries in a dictionary with a value above ten, we could write the following code:
+```python
+counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+for key in counts:
+    if counts[key] > 10 :
+        print(key, counts[key])
+```
+* To print the keys in alphabetical order, you first make a list of the keys in the dictionary using the keys method available in dictionary objects, and then sort that list and loop through the sorted list, looking up each key and printing out key-value pairs in sorted order as follows:
+
+```python
+counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+lst = list(counts.keys())
+print(lst)
+lst.sort()
+print(lst)
+for key in lst:
+    print(key, counts[key])
+```
 
 ---
 ## Retrieving Lists of Keys and Values
@@ -80,4 +98,19 @@ The same result:
 ## Two Iteration Variables
 * We loop through the key-value pairs in a dictionary using *two* iteration variables.
 * Each iteration, the first variable is the key and the second variable is the corresponding value for the key [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/dictionaries/exercises/find-the-largest.py)
+
+---
+## Text Parsing
+* File can be with capitalization or with punctuation. To solve both problems can be used the string methods *lower*, *punctuation* and *translate*. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/dictionaries/exercises/counting-full.py)
+* Here is the documentation for translate:
+
+line.translate(str.maketrans(fromstr, tostr, deletestr))
+
+* Replace the characters in *fromstr* with the character in the same position in *tostr* and delete all characters that are in *deletestr*. The *fromstr* and *tostr* can be empty strings and the *deletestr* parameter can be omitted.
+* We can get the list of characters that it considers “punctuation”:
+```python
+>>> import string
+>>> string.punctuation
+'!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+```
    
