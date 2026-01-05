@@ -1,2 +1,3 @@
 import string
-string.punctuation
+show = string.punctuation
+print(show)
