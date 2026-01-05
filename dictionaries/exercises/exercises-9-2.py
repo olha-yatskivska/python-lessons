@@ -10,7 +10,7 @@ for line in fhandle :
   if len(words) < 3 or words[0] != 'From':
     continue
   if words[0] == 'From' :  
-    print(words[3]) 
+    print(words[2]) 
       
 #for words in line :
  # words = line.split()
