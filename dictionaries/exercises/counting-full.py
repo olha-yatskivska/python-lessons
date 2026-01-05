@@ -13,5 +13,7 @@ for line in fhand:
             counts[word] = 1
         else:
             counts[word] += 1
+for key in counts: 
+    print(key, counts[key])
 
 print(counts)
