@@ -13,6 +13,7 @@ for line in fhandle :
     print(words[2])
     counts = dict()
     
-    for word in words :
+    for word in words [2] :
+      counts = dict()
       counts[word] = counts.get(word,0) + 1
       print('Counts', counts)
