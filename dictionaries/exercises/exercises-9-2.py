@@ -3,16 +3,19 @@
 # At the end of the program print out the contents of your dictionary (order does not matter).
 counts = dict()
 name = input("Enter file:")
-fhandle = open(name)
-for line in fhandle :
+try:
+  fhandle = open(name)
+except:
+  print("File cannot be opened:", name)
+  quit()
+
+for line in fhandle:
   line = line.rstrip()
   words = line.split()
   if len(words) < 3 or words[0] != 'From':
     continue
-  if words[0] == 'From' :  
-    print(words[2])
-    
-    
-    for word in words[2]:
-      counts[word] = counts.get(word,0) + 1
-      print(counts)
+  
+  day = words[2]   
+  counts[day] = counts.get(day,0) + 1
+  
+print(counts)
