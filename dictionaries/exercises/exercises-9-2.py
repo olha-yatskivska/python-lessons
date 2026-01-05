@@ -10,10 +10,8 @@ for line in fhandle :
   if len(words) < 3 or words[0] != 'From':
     continue
   if words[0] == 'From' :  
-    print(words[2]) 
-      
-#for words in line :
- # words = line.split()
-  #for word in words :
-   # word = counts[word[3]] = counts.get(word[3],0) + 1
- #print('Counts', counts)
+    print(words[2])
+    
+    for word in words[2] :
+      word = counts[word] = counts.get(word,0) + 1
+      print('Counts', counts)
