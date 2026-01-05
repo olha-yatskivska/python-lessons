@@ -13,7 +13,7 @@ for line in fhandle :
     print(words[2])
     
     
-    for word in words [2] :
+    for words[2] in line:
       
       counts[word] = counts.get(word,0) + 1
       print(counts)
