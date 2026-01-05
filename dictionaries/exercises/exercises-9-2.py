@@ -14,5 +14,5 @@ for line in fhandle :
     counts = dict()
     
     for word in words[2] :
-      counts[word[2]] = counts.get(word[2],0) + 1
+      counts[word] = counts.get(word,0) + 1
       print('Counts', counts)
