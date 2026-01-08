@@ -7,4 +7,7 @@ for line in fhand :
   
   wds = line.split()
   print(wds)
+
+  for w in wds: 
+    print(w)
 #print(fname, len(fname))
