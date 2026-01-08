@@ -24,6 +24,10 @@ for line in fhand :
 print(many)
 
 # Find the word with largest count
-
+largest = None
 for cle, valeur in many.items() :
   print(cle, valeur)
+  if largest is None or largest > valeur :
+    largest = valeur
+
+print('Yay!!', largest)
