@@ -20,6 +20,10 @@ for line in fhand :
     #many[w] =  oldvalue + 1
     many[w] = many.get(w, 0) + 1
     #print('after', many)
-    
-
+   
 print(many)
+
+# Find the word with largest count
+
+for cle, valeur in many.items() :
+  print(cle, valeur)
