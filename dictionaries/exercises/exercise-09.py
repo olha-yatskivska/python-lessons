@@ -14,6 +14,7 @@ for line in fhand :
     print('before', many)
     oldvalue = 0
     if w in many : oldvalue = many[w]
+    print('oldvalue', oldvalue)
     many[w] =  oldvalue + 1
     print('after', many)
     
