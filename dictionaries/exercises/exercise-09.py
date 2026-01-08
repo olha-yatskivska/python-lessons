@@ -11,7 +11,7 @@ for line in fhand :
 
   for w in wds: 
     print(w)
-    many[w] = 42
+    many[w] = many[w] + 1 
 
 
 print(many)
