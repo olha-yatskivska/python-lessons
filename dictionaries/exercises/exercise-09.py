@@ -25,9 +25,11 @@ print(many)
 
 # Find the word with largest count
 largest = None
+bigword = None
 for cle, valeur in many.items() :
   print(cle, valeur)
   if largest is None or valeur  > largest  :
     largest = valeur
+    bigword = cle
 
-print('Yay!!', largest)
+print('Yay!!', bigword, largest)
