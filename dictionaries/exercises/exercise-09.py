@@ -27,7 +27,7 @@ print(many)
 largest = None
 for cle, valeur in many.items() :
   print(cle, valeur)
-  if largest is None or largest > valeur :
+  if largest is None or valeur  > largest  :
     largest = valeur
 
 print('Yay!!', largest)
