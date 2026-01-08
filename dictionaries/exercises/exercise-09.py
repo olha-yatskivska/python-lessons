@@ -11,6 +11,9 @@ for line in fhand :
 
   for w in wds: 
     print(w)
+    print(many)
+    oldvalue = 0
+    if w in many : olfdvalue = many[w]
     many[w] = many[w] + 1 
 
 
