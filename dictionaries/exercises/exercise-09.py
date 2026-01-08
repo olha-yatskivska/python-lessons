@@ -13,8 +13,8 @@ for line in fhand :
     print(w)
     print(many)
     oldvalue = 0
-    if w in many : olfdvalue = many[w]
-    many[w] = many[w] + 1 
-
+    if w in many : oldvalue = many[w]
+    many[w] =  oldvalue + 1 
+    
 
 print(many)
