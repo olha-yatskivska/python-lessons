@@ -1,6 +1,8 @@
 fname = input('Enter file: ')
 if len(fname) < 1 : fname = 'clown.txt'
 fhand = open(fname)
+many = dict()
+
 for line in fhand :
   line = line.rstrip()
     
@@ -9,4 +11,7 @@ for line in fhand :
 
   for w in wds: 
     print(w)
-#print(fname, len(fname))
+    many[w] = 42
+
+
+print(many)
