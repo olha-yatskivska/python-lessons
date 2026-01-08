@@ -10,7 +10,7 @@ for line in fhand :
   # print(wds)
 
   for w in wds: 
-    print('===>', w)
+    #print('===>', w)
     #print('before', many)
     #oldvalue = 0
     #if w in many : oldvalue = many[w]
@@ -19,7 +19,7 @@ for line in fhand :
     #print('oldvalue', oldvalue)
     #many[w] =  oldvalue + 1
     many[w] = many.get(w, 0) + 1
-    print('after', many)
+    #print('after', many)
     
 
 print(many)
