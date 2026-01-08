@@ -11,14 +11,14 @@ for line in fhand :
 
   for w in wds: 
     print('===>', w)
-    print('before', many)
-    
+    #print('before', many)
     #oldvalue = 0
     #if w in many : oldvalue = many[w]
-    oldvalue = many.get(w, 0)
-    
-    print('oldvalue', oldvalue)
-    many[w] =  oldvalue + 1
+    #oldvalue = many.get(w, 0)
+ 
+    #print('oldvalue', oldvalue)
+    #many[w] =  oldvalue + 1
+    many[w] = many.get(w, 0) + 1
     print('after', many)
     
 
