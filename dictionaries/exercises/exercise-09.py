@@ -10,11 +10,12 @@ for line in fhand :
   # print(wds)
 
   for w in wds: 
-    print(w)
-    print(many)
+    print('===>', w)
+    print('before', many)
     oldvalue = 0
     if w in many : oldvalue = many[w]
-    many[w] =  oldvalue + 1 
+    many[w] =  oldvalue + 1
+    print('after', many)
     
 
 print(many)
