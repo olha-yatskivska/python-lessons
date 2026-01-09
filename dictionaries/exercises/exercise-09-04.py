@@ -28,7 +28,7 @@ for line in fhandle:
 # Find the word with largest count
 messages = None
 most = None
-for cle, valeur in mail.items() :
+for cle, valeur in counts.items() :
   print(cle, valeur)
   if messages is None or valeur  > messages  :
     messages = valeur
