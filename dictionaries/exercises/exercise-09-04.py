@@ -29,7 +29,7 @@ for line in fhandle:
 messages = None
 most = None
 for cle, valeur in counts.items() :
-  print(cle, valeur)
+  #print(cle, valeur)
   if messages is None or valeur  > messages  :
     messages = valeur
     most = cle
