@@ -18,7 +18,7 @@ for line in fhandle:
   
   mail = words[1] 
   num  = mail.find('@') 
-  domaim = mail[num-1 :]
+  domain = mail[num+1 :]
   
   counts[domain] = counts.get(domain,0) + 1
   #print(mail)
