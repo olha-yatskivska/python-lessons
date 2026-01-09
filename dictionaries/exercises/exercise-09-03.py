@@ -24,8 +24,8 @@ for line in fhandle:
   if len(words) < 3 or words[0] != 'From':
     continue
   
-  day = words[0]   
+  mail = words[1]   
   #counts[day] = counts.get(day,0) + 1
-  print(day)
+  print(mail)
   
 #print(counts)
