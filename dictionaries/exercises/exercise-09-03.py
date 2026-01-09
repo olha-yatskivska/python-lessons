@@ -25,7 +25,7 @@ for line in fhandle:
     continue
   
   mail = words[1]   
-  #counts[day] = counts.get(day,0) + 1
-  print(mail)
+  counts[mail] = counts.get(mail,0) + 1
+  #print(mail)
   
-#print(counts)
+print(counts)
