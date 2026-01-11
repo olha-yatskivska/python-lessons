@@ -40,4 +40,8 @@ fred
 ```
 
 ## Tuples and Dictionaries
-* The items() method in dictionaries returns a lists of (key, value) tuples [Program]()
+* The items() method in dictionaries returns a lists of (key, value) tuples [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/tuples/exercises/tuples-and-dictionaries.py)
+
+## Tuples are Comparable
+* The comparison operators work with tuples and other sequences.
+* If the first item is equal, Python goes on to the next element, and so on, until it finds elements that differ.
