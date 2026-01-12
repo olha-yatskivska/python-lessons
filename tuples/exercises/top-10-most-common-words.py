@@ -3,7 +3,7 @@ counts = dict()
 for line in fhand:
   words = line.split()
   for word in words:
-    count[word] = counts.get(word, 0) + 1
+    counts[word] = counts.get(word, 0) + 1
 
 lst = list()
 for key, val in counts.items():
