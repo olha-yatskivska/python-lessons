@@ -12,5 +12,5 @@ for key, val in counts.items():
 
 lst = sorted(lst, reverse=True)
 
-for val, key in lst[:10] :
+for key, val in lst[:10] :
   print(key, val)
