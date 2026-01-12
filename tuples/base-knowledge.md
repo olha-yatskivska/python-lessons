@@ -1,7 +1,7 @@
 # Tuples in Python
 
 ## Tuples are immutable
-* A tuplel is a sequence of values much like a list.
+* A tuple is a sequence of values much like a list.
 * They have elements which are indexed starting at 0.
 * Unlike a list, you cannot alter its contents - similar to a string.
 
@@ -44,7 +44,9 @@ fred
 
 ## Tuples are Comparable
 * The comparison operators work with tuples and other sequences.
-* If the first item is equal, Python goes on to the next element, and so on, until it finds elements that differ. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/tuples/exercises/top-10-most-common-words.pyq1)
+* If the first item is equal, Python goes on to the next element, and so on, until it finds elements that differ.
+* Once a comparison is resolved (e.g., $0 < 1$), Python stops comparing the remaining elements
+[Program](https://github.com/olha-yatskivska/python-lessons/blob/main/tuples/exercises/top-10-most-common-words.pyq1)
 
 ---
 ## Sorting Lists of Tuples
