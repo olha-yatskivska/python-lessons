@@ -75,3 +75,11 @@ dict_items([('a', 10), ('c', 22), ('b', 1)])
 
 ---
 
+## Cases where you might prefer tuples
+* In some contexts, like a return statement, it is syntactically simpler to create a tuple than a list. In other contexts, you might prefer a list.
+
+* If you want to use a sequence as a dictionary key, you have to use an immutable type like a tuple or string.
+
+* If you are passing a sequence as an argument to a function, using tuples reduces the potential for unexpected behavior due to aliasing.
+
+Because tuples are immutable, they don’t provide methods like sort and reverse, which modify existing lists. However Python provides the built-in functions sorted and reversed, which take any sequence as a parameter and return a new sequence with the same elements in a different order.
