@@ -20,8 +20,8 @@ for line in fhandle:
     continue
 
 
-  email = words[1] 
-    for email in words: 
+  email = words[1]
+  for email in words: 
       #print(mail)
       #num  = email.find('@')
       #user = email[:num]
