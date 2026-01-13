@@ -17,6 +17,8 @@ for line in fhandle:
     continue
   
   t = words[5].split(':')
+  h = t[0]
+
     
   
     
