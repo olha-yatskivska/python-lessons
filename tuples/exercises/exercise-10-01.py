@@ -19,8 +19,8 @@ for line in fhandle:
   if len(words) < 3 or words[0] != 'From':
     continue
     
-  for word[1] in words :
-    counts[word[1]] = counts.get(word[1],0) + 1
+  for words[1] in words :
+    counts[words[1]] = counts.get(words[1],0) + 1
   print(counts)
 #print(counts)
 #print(counts.items())
