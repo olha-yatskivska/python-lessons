@@ -14,4 +14,9 @@ for line in fhand :
 print(many.items())
 print(sorted(many.items()))
 
+tmp = dict()
+for k, v in many.items() :
+  tup = (v, k)
+  print(tup)
+
 
