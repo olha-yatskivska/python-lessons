@@ -18,9 +18,11 @@ for line in fhandle:
   words = line.split()
   if len(words) < 3 or words[0] != 'From':
     continue
+
+  email = words[1]
     
-  for words[1] in words :
-    counts[words[1]] = counts.get(words[1],0) + 1
+  for email in words :
+    counts[email] = counts.get(email,0) + 1
   print(counts)
 #print(counts)
 #print(counts.items())
