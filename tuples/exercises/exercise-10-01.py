@@ -34,7 +34,7 @@ for k, v in counts.items() :
   newlist.append(tup)
 
 result = sorted(newlist, reverse=True)
-
-for v, k in result[0] :
+print(result)
+for v, k in result[:5] :
   print(k, v)
 
