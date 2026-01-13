@@ -15,8 +15,10 @@ print(many.items())
 print(sorted(many.items()))
 
 tmp = dict()
+newlist = ()
 for k, v in many.items() :
   tup = (v, k)
-  print(tup)
+  newlist.append(tup)
+print(newlist)
 
 
