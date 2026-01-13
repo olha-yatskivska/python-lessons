@@ -21,18 +21,14 @@ for line in fhandle:
 
 
   email = words[1]
-  for email in words: 
-      #print(mail)
-      #num  = email.find('@')
-      #user = email[:num]
-      counts[email] = counts.get(email,0) + 1
-    print(counts)
-
-tmp = dict()
-newlist = list()
-for k, v in counts.items() :
-  tup = (v, k)
-  newlist.append(tup)
+  for email in words:
+    counts[email] = counts.get(email,0) + 1
+    
+    tmp = dict()
+    newlist = list()
+    for k, v in counts.items() :
+      tup = (v, k)
+      newlist.append(tup)
 
 result = sorted(newlist, reverse=True)
 print(result)
