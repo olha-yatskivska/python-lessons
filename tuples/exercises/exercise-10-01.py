@@ -31,6 +31,6 @@ for k, v in counts.items() :
   answer = sorted(newlist, reverse=True)
 
   
-  for v, k in answer[:1] :
-    print(k, v)
+for v, k in answer[:1] :
+  print(k, v)
 
