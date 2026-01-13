@@ -27,10 +27,12 @@ newlist = list()
 for k, v in counts.items() :
   tup = (v, k)
   newlist.append(tup)
+
+print(max(tup))
   
-answer = sorted(newlist, reverse=True)
+#answer = sorted(newlist, reverse=True)
 
   
-for v, k in answer[:1] :
-  print(k, v)
+#for v, k in answer[:1] :
+ # print(k, v)
 
