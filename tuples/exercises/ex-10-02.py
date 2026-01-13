@@ -20,8 +20,9 @@ for line in fhandle:
         t = words[5].split(':')
         h = t[0]
         counts[h] = counts.get(h,0) + 1
+        print(counts)
        
-print(counts)
+  
 
      
   #num  = t.find(':') 
