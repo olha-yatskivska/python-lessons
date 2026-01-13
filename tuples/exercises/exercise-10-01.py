@@ -23,7 +23,7 @@ for line in fhandle:
   #print(mail)
   #num  = email.find('@') 
   #user = email[:num]
-  counts[email = counts.get(email,0) + 1
+  counts[email] = counts.get(email,0) + 1
 
 tmp = dict()
 newlist = list()
