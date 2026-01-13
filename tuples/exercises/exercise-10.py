@@ -22,7 +22,7 @@ for k, v in many.items() :
 #print(newlist)
 #print(sorted(newlist, reverse=True))
 cool = sorted(newlist, reverse=True)
-print(cool)
+#print(cool)
 
 for v, k in cool[:5] :
   print(k, v)
