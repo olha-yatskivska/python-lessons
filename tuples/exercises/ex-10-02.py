@@ -21,22 +21,21 @@ for line in fhandle:
   counts[h] = counts.get(h,0) + 1
 print(counts)
        
-  
-
-     
+      
   #num  = t.find(':') 
   #h = t[:num]
-  
   #counts[h] = counts.get(h,0) + 1
   #print(counts)
 
-#newlist = list()
-#for k, v in counts.items() :
- # tup = (k,v)
- # newlist.append(tup)
+newlist = list()
+for k, v in counts.items() :
+    tup = (k,v)
+    newlist.append(tup)
  
-#hours = sorted(newlist)
+hours = sorted(newlist)
 
-#print(hours[1], hours[0])
+for k, v in sorted: 
+    print(k, v)
+ 
 
 
