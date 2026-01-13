@@ -20,10 +20,19 @@ for line in fhandle:
     continue
   
   email = words[1] 
- 
   #print(mail)
-  num  = email.find('@') 
-  user = email[:num]
+  #num  = email.find('@') 
+  #user = email[:num]
   counts[user] = counts.get(user,0) + 1
-  
-print(counts)
+
+tmp = dict()
+newlist = list()
+for k, v in counts.items() :
+  tup = (v, k)
+  newlist.append(tup)
+
+result = sorted(newlist, reverse=True)
+
+for v, k in result[0] :
+  print(k, v)
+
