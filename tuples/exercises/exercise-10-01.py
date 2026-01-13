@@ -28,8 +28,8 @@ newlist = list()
 for k, v in counts.items() :
   tup = (v, k)
   newlist.append(tup)
-  result = sorted(newlist, reverse=True)
+  answer = sorted(newlist, reverse=True)
   
-  for v, k in result[:1] :
+  for v, k in answer[:0] :
     print(k, v)
 
