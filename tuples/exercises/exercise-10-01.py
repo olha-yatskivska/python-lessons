@@ -29,9 +29,8 @@ for line in fhandle:
     for k, v in counts.items() :
       tup = (v, k)
       newlist.append(tup)
-
-result = sorted(newlist, reverse=True)
-print(result)
-for v, k in result[:5] :
-  print(k, v)
+      result = sorted(newlist, reverse=True)
+      
+      for v, k in result[:5] :
+        print(k, v)
 
