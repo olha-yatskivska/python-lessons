@@ -22,5 +22,12 @@ for line in fhandle:
   
   counts[h] = counts.get(h,0) + 1
   #print(mail)
-  
-print(counts)
+
+newlist = list()
+for k, v in counts.items() :
+  tup = (k,v)
+  newlist.append(tup)
+ 
+print(sorted(newlist)
+
+
