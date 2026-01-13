@@ -35,6 +35,6 @@ for k, v in counts.items() :
 
 
 # or with max()
-
-for v, k in max(newlist) :
-  print(k, v)
+print(max(newlist))
+#for v, k in max(newlist) :
+ # print(k, v)
