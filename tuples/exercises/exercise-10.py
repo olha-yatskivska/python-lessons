@@ -10,13 +10,6 @@ for line in fhand :
   for w in wds: 
     many[w] = many.get(w, 0) + 1
    
-# Find the word with largest count
-largest = None
-bigword = None
-for cle, valeur in many.items() :
-  print(cle, valeur)
-  if largest is None or valeur  > largest  :
-    largest = valeur
-    bigword = cle
-
-print(bigword, largest)
+# Find the top 5 word by frequecy
+print(many)
+print(sorted(many))
