@@ -18,15 +18,12 @@ for line in fhandle:
   
   t = words[5].split(':')
   h = t[0]
-
-    
-  
-    
+     
   #num  = t.find(':') 
   #h = t[:num]
   
   counts[h] = counts.get(h,0) + 1
-  print(mail)
+  print(counts)
 
 #newlist = list()
 #for k, v in counts.items() :
