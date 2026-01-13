@@ -28,6 +28,8 @@ for k, v in counts.items() :
   tup = (k,v)
   newlist.append(tup)
  
-print(sorted(newlist))
+hours = sorted(newlist)
+
+print(hours[1], hours[0])
 
 
