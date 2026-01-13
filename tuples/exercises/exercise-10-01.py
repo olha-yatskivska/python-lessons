@@ -19,7 +19,7 @@ for line in fhandle:
   if len(words) < 3 or words[0] != 'From':
     continue
     
-    for word in words[1] :
+    for word in words :
       counts[word] = counts.get(word,0) + 1
 print(counts.items())
 print(sorted(counts.items()))
