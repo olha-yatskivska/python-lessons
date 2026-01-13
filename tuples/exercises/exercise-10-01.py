@@ -18,10 +18,9 @@ for line in fhandle:
   words = line.split()
   if len(words) < 3 or words[0] != 'From':
     continue
-print(line)
-  
-    for word in words :
-      counts[word] = counts.get(word,0) + 1
+ 
+    mail = words[1]
+    counts[word] = counts.get(word,0) + 1
 print(counts.items())
 print(sorted(counts.items()))
   
