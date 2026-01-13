@@ -30,6 +30,6 @@ for k, v in counts.items() :
   newlist.append(tup)
   answer = sorted(newlist, reverse=True)
   
-  for v, k in answer[:0] :
+  for v, k in answer[:1] :
     print(k, v)
 
