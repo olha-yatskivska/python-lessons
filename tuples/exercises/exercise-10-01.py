@@ -16,7 +16,7 @@ except:
 for line in fhandle:
   line = line.rstrip()
   words = line.split()
-  if len(words) < 3 or words[0] != 'From':
+  if len(words) < 2 or words[0] != 'From':
     continue
 
   email = words[1]
