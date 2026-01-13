@@ -29,7 +29,7 @@ for k, v in counts.items() :
   tup = (v, k)
   newlist.append(tup)
   answer = sorted(newlist, reverse=True)
-  print(answer)
+print(answer)
   
   #for v, k in answer[:1] :
    # print(k, v)
