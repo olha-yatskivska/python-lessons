@@ -15,10 +15,11 @@ for line in fhandle:
   words = line.split()
   if len(words) < 3 or words[0] != 'From':
     continue
-      for word in words:
-          t = words[5].split(':')
-          h = t[0]
-          counts[h] = counts.get(h,0) + 1
+      
+    for word in words:
+        t = words[5].split(':')
+        h = t[0]
+        counts[h] = counts.get(h,0) + 1
        
  print(counts)
 
