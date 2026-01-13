@@ -20,6 +20,6 @@ for k, v in many.items() :
   tup = (v, k)
   newlist.append(tup)
 print(newlist)
-print(sorted(newlist))
+print(sorted(newlist, reverse=True))
 
 
