@@ -21,7 +21,7 @@ for line in fhandle:
 
   email = words[1]
   counts[email] = counts.get(email,0) + 1
-print(counts.items())
+#print(counts.items())
   
 tmp = dict()
 newlist = list()
