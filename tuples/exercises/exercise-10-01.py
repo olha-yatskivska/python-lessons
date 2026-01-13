@@ -28,7 +28,7 @@ for k, v in counts.items() :
   tup = (v, k)
   newlist.append(tup)
 
-print(max(tup))
+print(max(newlist))
   
 #answer = sorted(newlist, reverse=True)
 
