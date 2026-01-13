@@ -28,6 +28,6 @@ for k, v in counts.items() :
   tup = (k,v)
   newlist.append(tup)
  
-print(sorted(newlist)
+print(sorted(newlist))
 
 
