@@ -21,8 +21,7 @@ for line in fhandle:
 
 
   email = words[1]
-  for email in words:
-    counts[email] = counts.get(email,0) + 1
+  counts[email] = counts.get(email,0) + 1
   print(counts)  
     
    # tmp = dict()
