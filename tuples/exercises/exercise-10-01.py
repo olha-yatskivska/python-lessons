@@ -20,10 +20,10 @@ for line in fhandle:
     continue
   
   email = words[1] 
-  counts[email] = counts.get(email,0) + 1
+ 
   #print(mail)
   num  = email.find('@') 
   user = email[:num]
+  counts[user] = counts.get(user,0) + 1
   
-  
-print(user)
+print(counts)
