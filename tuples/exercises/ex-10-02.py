@@ -34,7 +34,7 @@ for k, v in counts.items() :
  
 hours = sorted(newlist)
 
-for k, v in sorted: 
+for k, v in hours: 
     print(k, v)
  
 
