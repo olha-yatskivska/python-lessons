@@ -21,7 +21,7 @@ for line in fhandle:
 
   email = words[1]
   counts[email] = counts.get(email,0) + 1
-  print(counts)
+print(counts)
 #print(counts)
 #print(counts.items())
 #print(sorted(counts.items()))
