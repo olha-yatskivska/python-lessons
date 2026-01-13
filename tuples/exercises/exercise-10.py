@@ -5,7 +5,7 @@ many = dict()
 
 for line in fhand :
   line = line.rstrip()
-    wds = line.split()
+  wds = line.split()
   
   for w in wds: 
     many[w] = many.get(w, 0) + 1
