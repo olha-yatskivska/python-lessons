@@ -18,7 +18,7 @@ for line in fhandle:
   
   t = words[5] 
   num  = t.find(':') 
-  h = t[num+1 :]
+  h = t[:num]
   
   counts[h] = counts.get(h,0) + 1
   #print(mail)
