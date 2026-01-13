@@ -20,9 +20,7 @@ for line in fhandle:
     continue
 
   email = words[1]
-    
-  for email in words :
-    counts[email] = counts.get(email,0) + 1
+  counts[email] = counts.get(email,0) + 1
   print(counts)
 #print(counts)
 #print(counts.items())
