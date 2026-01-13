@@ -12,10 +12,10 @@ for line in fhand :
    
 # Find the top 5 word by frequecy
 print(many.items())
-print(sorted(many.items()))
+#print(sorted(many.items()))
 
 tmp = dict()
-newlist = ()
+newlist = list()
 for k, v in many.items() :
   tup = (v, k)
   newlist.append(tup)
