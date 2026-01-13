@@ -41,4 +41,4 @@ for k, v in counts.items() :
 
 # or  with max() 
 finish = max(newlist)
-print(finish[0], finish[0])
+print(finish[1], finish[0])
