@@ -21,7 +21,7 @@ for line in fhandle:
     
     for word in words[1] :
       counts[word] = counts.get(word,0) + 1
-  print(counts)
+      print(counts)
   
 
 
