@@ -20,11 +20,11 @@ for line in fhandle:
     continue
   print(words)
  
-    mail = words[1]
-    counts[word] = counts.get(word,0) + 1
-print(counts)
-print(counts.items())
-print(sorted(counts.items()))
+   # mail = words[1]
+    #counts[word] = counts.get(word,0) + 1
+#print(counts)
+#print(counts.items())
+#print(sorted(counts.items()))
   
 
 
