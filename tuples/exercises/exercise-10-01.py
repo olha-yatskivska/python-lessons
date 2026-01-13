@@ -18,12 +18,14 @@ for line in fhandle:
   words = line.split()
   if len(words) < 3 or words[0] != 'From':
     continue
-  
+
+
   email = words[1] 
-  #print(mail)
-  #num  = email.find('@') 
-  #user = email[:num]
-  counts[email] = counts.get(email,0) + 1
+    for email in words: 
+      #print(mail)
+      #num  = email.find('@')
+      #user = email[:num]
+      counts[email] = counts.get(email,0) + 1
 
 tmp = dict()
 newlist = list()
