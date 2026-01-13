@@ -23,13 +23,13 @@ for line in fhandle:
   counts[email] = counts.get(email,0) + 1
 print(counts.items())
   
-#tmp = dict()
-#newlist = list()
-#for k, v in counts.items() :
-     # tup = (v, k)
-      #newlist.append(tup)
-      #result = sorted(newlist, reverse=True)
-      
-      #for v, k in result[:5] :
-       # print(k, v)
+tmp = dict()
+newlist = list()
+for k, v in counts.items() :
+  tup = (v, k)
+  newlist.append(tup)
+  result = sorted(newlist, reverse=True)
+  
+  for v, k in result[:1] :
+    print(k, v)
 
