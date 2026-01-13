@@ -11,5 +11,7 @@ for line in fhand :
     many[w] = many.get(w, 0) + 1
    
 # Find the top 5 word by frequecy
-print(many)
-print(sorted(many))
+print(many.items())
+print(sorted(many.items()))
+
+
