@@ -23,14 +23,15 @@ for line in fhandle:
   email = words[1]
   for email in words:
     counts[email] = counts.get(email,0) + 1
+  print(counts)  
     
-    tmp = dict()
-    newlist = list()
-    for k, v in counts.items() :
-      tup = (v, k)
-      newlist.append(tup)
-      result = sorted(newlist, reverse=True)
+   # tmp = dict()
+    #newlist = list()
+    #for k, v in counts.items() :
+     # tup = (v, k)
+      #newlist.append(tup)
+      #result = sorted(newlist, reverse=True)
       
-      for v, k in result[:5] :
-        print(k, v)
+      #for v, k in result[:5] :
+       # print(k, v)
 
