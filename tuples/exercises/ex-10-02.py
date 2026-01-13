@@ -21,7 +21,7 @@ for line in fhandle:
         h = t[0]
         counts[h] = counts.get(h,0) + 1
        
- print(counts)
+print(counts)
 
      
   #num  = t.find(':') 
