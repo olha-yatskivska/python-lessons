@@ -1,0 +1,26 @@
+
+
+counts = dict()
+name = input("Enter file:")
+if len(name) < 1:
+    name = "mbox-short.txt"
+try:
+  fhandle = open(name)
+except:
+  print("File cannot be opened:", name)
+  quit()
+
+for line in fhandle:
+  line = line.rstrip()
+  words = line.split()
+  if len(words) < 3 or words[0] != 'From':
+    continue
+  
+  t = words[5] 
+  num  = t.find(':') 
+  h = t[num+1 :]
+  
+  counts[h] = counts.get(h,0) + 1
+  #print(mail)
+  
+print(counts)
