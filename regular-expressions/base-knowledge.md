@@ -31,6 +31,15 @@
 * You can use re.search() to see if a string matches a regular expression, similar to using the find() method for strings. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/regular-expressions/exercises/search-function.py)
 *  The caret character is used in regular expressions to match “the beginning” of a line. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/regular-expressions/exercises/search-with-start-with.py)
 ---
+# Wild-Card Characters
+* The dot character matches any character
+* If you add the asteriks character, the character is "any number of times"
+* ^ match the start of the line
+* \S match any non-whitespace character
+* + one or more times
+
+
+---
 ## Character matching in regular expressions
 * The most commonly used special character is the period or full stop, which matches any character. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/regular-expressions/exercises/character-matching.py)
 * using the * or + characters in your regular expression. These special characters mean that instead of matching a single character in the search string, they match zero-or-more characters (in the case of the asterisk) or one-or-more of the characters (in the case of the plus sign). [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/regular-expressions/exercises/wild-card-character.py)
@@ -42,7 +51,7 @@
 ## Combining searching and extracting 
 * Translating this, we are saying, we want lines that start with X-, followed by zero or more characters (.*), followed by a colon (:) and then a space. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/regular-expressions/exercises/search-for-lines-start-with.py)
 ---
-## The translation of this regular expression is that we are looking for lines that start with From (note the space), followed by any number of characters (.*), followed by a space, followed by two digits [0-9][0-9], followed by a colon character. This is the definition of the kinds of lines we are looking for.
+* The translation of this regular expression is that we are looking for lines that start with From (note the space), followed by any number of characters (.*), followed by a space, followed by two digits [0-9][0-9], followed by a colon character. This is the definition of the kinds of lines we are looking for.
 [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/regular-expressions/exercises/search-for-lines.py)
 
 ---
