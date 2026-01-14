@@ -1,8 +1,7 @@
 # Regular Expressions 
 
-The regular expression module re must be imported into your program before you can use it.
-
 [Regular expression operations](https://docs.python.org/3/library/re.html)
+---
 [regular expressions](https://regex101.com/)
 
 | **Special characters** | **Meaning** | 
@@ -27,8 +26,9 @@ The regular expression module re must be imported into your program before you c
 |\d| Matches any decimal digit; equivalent to the set [0-9].|
 |\D| Matches any non-digit character; equivalent to the set [^0-9].|
 
-## What can we do with regular expressions
-* The simplest use of the regular expression module is the search() function. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/regular-expressions/exercises/search-function.py)
+## The Regular Expressin Module
+* The regular expression module re must be imported into your program before you can use it.
+* You can use re.search() to see if a string matches a regular expression, similar to using the find() method for strings. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/regular-expressions/exercises/search-function.py)
 *  The caret character is used in regular expressions to match “the beginning” of a line. [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/regular-expressions/exercises/search-with-start-with.py)
 ---
 ## Character matching in regular expressions
