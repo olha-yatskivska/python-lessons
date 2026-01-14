@@ -11,7 +11,7 @@ print(host)
 
 data = 'From stephen.marquard@utc.ac.za Sat Jan 5 09:14:16 2008'
 
-for line in fhandle:
+for line in data:
   words = line.split()
   email=words[1]
   pieces = email.split('@')
