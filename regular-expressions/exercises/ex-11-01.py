@@ -1,5 +1,5 @@
 import re
-hand = open('mbox-shoet.txt')
+hand = open('mbox-short.txt')
 numlist = list()
 for line in hand:
   line = line.rstrip()
