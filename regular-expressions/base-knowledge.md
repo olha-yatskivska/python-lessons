@@ -37,7 +37,20 @@
 * ^ match the start of the line
 * \S match any non-whitespace character
 * + one or more times
+* [0-9] one or more digits
+* [AEIOU] one or more upper case letters for A, E, I, O, U
+* The repeat characteres (* and +) push outward in both directions (greedy) to matchthe largest possible string: ^F.+:
+*  Not all regular expression repeat codes are greedy. If you add a ? character, the + and * chill out a bit: ^F.+?:
+---
+## Fine-Tuning String Extraction
+* You can refine the match for re.findall() and separately determine which portion of match is to be extracted by using parentheses: ^From (\s+@\s+) at least one non-whitespace charaacter
+* Parentheses are not part of the match - but they tell where to start and stop what string to extract
 
+
+---
+## Matching and Extracting Data
+* re.rearch() returns a True/False depending on whether the string matches the regukar expression
+* if we actually want the matching strings to be extracted, we use re.findall()
 
 ---
 ## Character matching in regular expressions
