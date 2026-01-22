@@ -15,7 +15,7 @@ except:
 
 for line in fhand:
   line = line.rstrip()
-  numbers = re.findall('^New Revision: ([0-9])', line)
+  numbers = re.findall('^New Revision: ([0-9]+)', line)
   if len(numbers) !=1 : continue
   num = float(numbers[0])
   numlist.append(num)
