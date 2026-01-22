@@ -12,10 +12,11 @@ for line in fhand:
     line = line.rstrip()
     mtch = re.findall ('[{regex}]', line)
     if len(mtch) > 0:
-        for n in mtch:
-            lst.append(n)
-       # count = count + 1           
+        count = count + 1 
+       # for n in mtch:
+        #    lst.append(n)
+       #           
 
-print(lst)
+print(count)
 
 
