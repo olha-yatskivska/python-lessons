@@ -12,8 +12,9 @@ for line in fhandle:
   numbers = re.findall('[0-9]+' , line)
   if len(numbers) > 0: 
     for n in numbers:
-      numlist.append(n)
+      num = int(n)
+      numlist.append(num)
 
-print(sum(numlist))
+print(len(numlist), sum(numlist))
 
 
