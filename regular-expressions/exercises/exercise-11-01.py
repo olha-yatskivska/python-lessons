@@ -10,7 +10,7 @@ lst = list()
 
 for line in fhand: 
     line = line.rstrip()
-    mtch = re.findall ('([{regex}])', line)
+    mtch = re.findall ('({regex})', line)
     if len(mtch) > 0:
         count = count + 1 
         #for n in mtch:
