@@ -19,5 +19,5 @@ for line in fhand:
   if len(numbers) !=1 : continue
   num = float(numbers[0])
   numlist.append(num)
-  average = sum(numlist)/len(numlist)
+  average = int(sum(numlist)/len(numlist))
 print(average)
