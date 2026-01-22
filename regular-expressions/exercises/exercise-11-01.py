@@ -9,7 +9,7 @@ count = 0
 lst = list()
 
 for line in fhand: 
-    line = line.rstrip()
+    #line = line.rstrip()
     mtch = re.search (f'{regex}', line)
     if mtch:
         count = count + 1 
