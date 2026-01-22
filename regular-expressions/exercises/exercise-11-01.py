@@ -5,13 +5,14 @@ import re
 
 fhand = open('mbox.txt')
 regex = input ("Enter a regular expression:")
+count = 0
 
 for line in fhand: 
     line = line.rstrip()
     mtch = re.findall ('(regex)', line)
     if len(mtch) > 0: 
-        count(line)
+        count = count + 1           
 
-print(count(line))
+print(count)
 
 
