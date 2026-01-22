@@ -10,10 +10,11 @@ numlist = list()
 for line in fhandle:
   line = line.rstrip()
   numbers = re.findall('([0-9.]+)' , line)
-
+  if len(numbers) > 0:
+        print(numbers)
   #num = int(numbers[0])
   #numlist.append(num)
-print(numbers)
-#print(numlist)
+
+#print(sum(numlist))
 
 
