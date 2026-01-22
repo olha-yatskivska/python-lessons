@@ -9,7 +9,7 @@ except:
 numlist = list()
 for line in fhandle:
   line = line.rstrip()
-  numbers = re.findall(r'\d+' , line)
+  numbers = re.findall(r'\[0-9]+' , line)
   if len(numbers) > 0: 
     num = int(numbers[0])
     numlist.append(num)
