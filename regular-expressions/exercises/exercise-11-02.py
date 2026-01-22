@@ -17,7 +17,7 @@ for line in fhand:
   line = line.rstrip()
   numbers = re.findall('^New Revision: ([0-9]+)', line)
   if len(numbers) !=1 : continue
-  num = int(numbers[0])
+  num = float(numbers[0])
   numlist.append(num)
   average = sum(numlist)/len(numlist)
 print(average)
