@@ -14,6 +14,6 @@ for line in fhandle:
     num = int(numbers[0])
     numlist.append(num)
 
-print(numlist)
+print(len(numlist))
 
 
