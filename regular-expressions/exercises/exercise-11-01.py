@@ -6,13 +6,16 @@ import re
 fhand = open('mbox.txt')
 regex = input ("Enter a regular expression:")
 count = 0
+lst = list()
 
 for line in fhand: 
     line = line.rstrip()
     mtch = re.findall ('(regex)', line)
-    if len(mtch) > 0: 
-        count = count + 1           
+    if len(mtch) > 0:
+        for n in mtch:
+            lst.append(n)
+       # count = count + 1           
 
-print(count)
+print(lst)
 
 
