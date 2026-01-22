@@ -9,10 +9,10 @@ except:
 numlist = list()
 for line in fhandle:
   line = line.rstrip()
-  numbers = re.findall(r'\[0-9]+' , line)
+  numbers = re.findall('[0-9]+' , line)
   if len(numbers) > 0: 
-    num = int(numbers[0])
-    numlist.append(num)
+    for n in numbers:
+      numlist.append(n)
 
 print(len(numlist))
 
