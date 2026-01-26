@@ -2,7 +2,7 @@
 
 ---
 ## What is Protocol
-* A set oof rules that all parties follow so we can predict each other's behavior
+* A set of rules that all parties follow so we can predict each other's behavior
 ```python
 http://www.dr-chuck.com/pagel.htm 
 protocol // host       / document
