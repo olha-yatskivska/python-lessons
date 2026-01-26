@@ -9,7 +9,7 @@
 ---
 
 ## What is TCP (Transmission Control Protocol)?
-TCP is a connection-oriented transport protocol. It ensures that data sent from one point to another arrives intact and in the correct order.
+TCP is a connection-oriented transport protocol. It ensures that data sent from one point to another arrives intact (the data arrives exactly as it was sent) and in the correct order.
 * **Key Feature:** It uses a "Three-Way Handshake" (SYN, SYN-ACK, ACK) to establish a connection before sending data.
 * **Reliability:** If a packet is lost, TCP detects it and requests a retransmission.
 ---
@@ -38,11 +38,11 @@ Data travels through layers. For a web developer/tester, the most important are:
 
 * IIS is a Web Server software created by Microsoft. It runs on Windows and "listens" for incoming HTTP requests on ports 80 or 443 to serve websites. (Competitors: Apache, Nginx).
 ---
-🐍 Python Specifics: String Handling
-When sending data over a network, Python must convert text into a format the "wire" understands (binary).
+## 🐍 Python Specifics: String Handling
+* When sending data over a network, Python must convert text into a format the "wire" understands (binary).
    * .encode(): Converts a String (human-readable) $\rightarrow$ Bytes (machine-readable). Default is usually UTF-8.
    * .decode(): Converts Bytes $\rightarrow$ String.
-Test Note: If you see "mojibake" (weird characters like Ã«), it usually means there is a mismatch between encoding and decoding.
+* Test Note: If you see "mojibake" (weird characters like Ã«), it usually means there is a mismatch between encoding and decoding.
 
 
 ---
@@ -64,5 +64,5 @@ mysock.connect( ('data.pr4e.org', 80) )
 * Once the web page has been opened with urllib.request.urlopen, we can treat it like a file and read through it using a for loop.
 * [Program](https://github.com/olha-yatskivska/python-lessons/blob/main/network-programming/exercises/urlib.py)
 ---
-## Reading binary files using urllib
+
 
