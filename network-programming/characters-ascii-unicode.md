@@ -47,30 +47,12 @@ while True:
 [An HTTP Request in Python](https://github.com/olha-yatskivska/python-lessons/blob/main/network-programming/exercises/http-request.py)
 
 ---
-```mermaid
-graph LR
-    %% Визначення вузлів
-    StringNode[String Unicode]
-    BytesIn[Bytes UTF-8]
-    BytesOut[Bytes UTF-8]
-    Sock[Socket]
-    NetNode((Network))
+## Why this is important for a Test Analyst (English)
 
-    %% Шлях отримання даних (Receiving Path - верхня частина на зображенні)
-    Sock -- "recv()" --> BytesIn
-    BytesIn -- "decode()" --> StringNode
+* **Data Corruption Detection:** Many "invisible" bugs happen when a String is encoded in one format (e.g., UTF-8) but the system expects another (e.g., Windows-1252). Verify that special characters, accents, and non-Latin scripts remain intact throughout the entire lifecycle.
 
-    %% Шлях відправлення даних (Sending Path - нижня частина на зображенні)
-    StringNode -- "encode()" --> BytesOut
-    BytesOut -- "send()" --> Sock
+* **Buffer and Memory Management:** Strings and Bytes have different sizes. A single character in a Unicode String might take up to 4 bytes in a UTF-8 Byte stream. If you are testing a system with strict memory limits or fixed-length database fields, this is where "Buffer Overflow" or "Data Truncation" errors are born.
 
-    %% Двосторонній зв'язок між Сокетом та Мережею
-    Sock <--> NetNode
+* **Security & Input Validation:** Attackers often use "Double Encoding" or invalid byte sequences to bypass web application firewalls (WAF). Understanding how the Socket receives raw bytes and how decode() processes them helps you design security test cases to ensure the system doesn't execute malicious code hidden in the byte stream.
 
-    %% Додаткова стилізація для схожості з оригіналом (необов'язково)
-    classDef boxFill fill:#dbeafe,stroke:#3b82f6,color:black;
-    classDef netFill fill:#ecfeff,stroke:#06b6d4,stroke-dasharray: 5 5;
-
-    class StringNode,BytesIn,BytesOut,Sock boxFill;
-    class NetNode netFill;
-```
+* **Integration Testing:** When testing communication between different services (e.g., a Python backend talking to a Java microservice), the "handshake" depends on both sides agreeing on the encoding. Testing the "Send/Receive" methods ensures that no data is lost "in translation" across the network.
