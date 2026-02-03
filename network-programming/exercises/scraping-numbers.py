@@ -20,6 +20,6 @@ tags = soup('span')
 for tag in tags:
     # Look at the parts of a tag
     print('TAG:', tag)
-    print('URL:', tag.get('href', None))
+    print('URL:', tag.get('class', None))
     print('Contents:', tag.contents[0])
     print('Attrs:', tag.attrs)
