@@ -21,7 +21,7 @@ counts = dict()
 for tag in tags:
     # Look at the parts of a tag
     print(tag.contents[0])
-    num = tag.contents[0]   
+    num = int(tag.contents[0])   
     counts[num] = counts.get(num, 0) + 1
 print(counts)
   
