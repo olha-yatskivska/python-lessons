@@ -22,6 +22,6 @@ for tag in tags:
     # Look at the parts of a tag
     #print(tag.contents[0])
     num = int(tag.contents[0])   
-    sum = sum(num)
+    sum = sum(num[0]) + 1
 print(sum)
   
