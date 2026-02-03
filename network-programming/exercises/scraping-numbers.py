@@ -20,6 +20,7 @@ tags = soup('span')
 counts = dict()
 for tag in tags:
     # Look at the parts of a tag
-    counts[tag.contents[0]] = counts.get(tag.contents[0], 0) + 1
+    num = tag.contents[0]   
+    counts[num] = counts.get(num, 0) + 1
     print('Sum:', counts)
   
