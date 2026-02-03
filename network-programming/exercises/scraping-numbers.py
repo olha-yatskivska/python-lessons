@@ -12,16 +12,19 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter - ')
-html = urlopen(url, context=ctx).read()
-soup = BeautifulSoup(html, "html.parser")
+try:
+    html = urlopen(url, context=ctx).read()
+    soup = BeautifulSoup(html, "html.parser")
+    
+    tags = soup('span')
+    
+    numlist = list()
+    for tag in tags:
+        if tag.contents[0].isdigit():
+            num = int(tag.contents[0])
+            numlist.append(num)
+    print('Sum:', sum(numlist))
 
-# Retrieve all of the anchor tags
-tags = soup('span')
-numlist = list()
-for tag in tags:
-    # Look at the parts of a tag
-    if tag.contents[0]).isdigit():
-    num = int(tag.contents[0])   
-    numlist.append(num)
-print('Sum:', sum(numlist))
+except: 
+    print('Error')
   
