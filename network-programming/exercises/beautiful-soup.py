@@ -3,9 +3,12 @@ from bs4 import BeautifulSoup
 
 url = input('Enter - ')
 html = urllib.request.urlopen(url).read()
-soup = BeatifulSoup(html, 'html.parser')
+soup = BeautifulSoup(html, 'html.parser')
 
 # Retrievw all of the anchor tags
 tags = soap('a')
 for tag in tags:
   print(tag.get('href', None))
+
+#http://www.dr-chuck.com/page1.htm
+#http://www.dr-chuck.com/page2.htm
