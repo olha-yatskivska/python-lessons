@@ -20,7 +20,7 @@ tags = soup('span')
 numlist = list()
 for tag in tags:
     # Look at the parts of a tag
-    #print(tag.contents[0])
+    if tag.contents[0]).isdigit():
     num = int(tag.contents[0])   
     numlist.append(num)
 print('Sum:', sum(numlist))
