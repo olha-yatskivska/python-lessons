@@ -17,11 +17,11 @@ soup = BeautifulSoup(html, "html.parser")
 
 # Retrieve all of the anchor tags
 tags = soup('span')
-counts = dict()
+#counts = dict()
 for tag in tags:
     # Look at the parts of a tag
-    print(tag.contents[0])
+    #print(tag.contents[0])
     num = int(tag.contents[0])   
-    counts[num] = counts.get(num, 0) + 1
-print(counts)
+    sum = sum(num)
+print(sum)
   
