@@ -6,7 +6,7 @@ html = urllib.request.urlopen(url).read()
 soup = BeautifulSoup(html, 'html.parser')
 
 # Retrievw all of the anchor tags
-tags = soap('a')
+tags = soup('a')
 for tag in tags:
   print(tag.get('href', None))
 
