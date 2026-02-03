@@ -17,6 +17,7 @@ soup = BeautifulSoup(html, "html.parser")
 
 # Retrieve all of the anchor tags
 tags = soup('span')
+counts = dict()
 for tag in tags:
     # Look at the parts of a tag
     counts[tag] = counts.get(tag, 0) + 1
