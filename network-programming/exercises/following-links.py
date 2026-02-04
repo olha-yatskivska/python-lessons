@@ -14,16 +14,27 @@ ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter - ')
 count = input('Enter count:')
+try: 
+    i = int(count)
+except:
+    print("Count must be a number")
+    quit()
+    
 position = input('Enter position:')
-
+try: 
+    j = int(position)
+except:
+    print("Position must be a number")
+    quit()
+    
 n = 0
-while n < count:
+while n < i:
     try:
         html = urllib.request.urlopen(url, context=ctx).read()
         soup = BeautifulSoup(html, 'html.parser')
         tags = soup('a')
         for tag in tags:
-            url = tags[position-1]
+            url = tags[j-1]
         n = n + 1 
         
     except:
