@@ -22,7 +22,7 @@ My collection of exercises and scripts from the [PY4E course](https://www.py4e.c
 
 [**Chapter 12: Regular Expressions**](https://github.com/olha-yatskivska/python-lessons/tree/main/regular-expressions) - Using the re library for sophisticated pattern matching, extracting specific substrings from large datasets, and mastering special characters (meta-characters).
 
-[ **Chapter 13: Network Programming**](https://github.com/olha-yatskivska/python-lessons/tree/main/network-programming) - This chapter covers how Python interacts with the web, moving beyond the browser to handle raw data transfer, urllib: built-in library for requesting and reading data from URLs, Beautiful Soup: A library used to parse and extract specific information from HTML/XML.
+[ **Chapter 13: Network Programming**](https://github.com/olha-yatskivska/python-lessons/tree/main/using-web-services) - This chapter covers how Python interacts with the web, moving beyond the browser to handle raw data transfer, urllib: built-in library for requesting and reading data from URLs, Beautiful Soup: A library used to parse and extract specific information from HTML/XML.
 
 ## **📂 Current & Next Steps**
 
