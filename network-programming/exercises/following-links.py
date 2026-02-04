@@ -21,8 +21,6 @@ except:
   quit()
 
 # Retrieve all of the anchor tags
-namelist = list()
-
 i = input('Enter count:')
 try: 
     i = int(i)
@@ -36,14 +34,12 @@ try:
 except:
     print('Position must be a number')
     quit()
-    
-tags = soup('a')
-for tag in tags:
-    # Look at the parts of a tag
-    tag = tag.rstrip()
-    name = tag.contents[0]
-    namelist.append(name)
-print('Retrieving:', namelist[i])
+n = 0
+while n > = j:
+    tags = soup('a')
+    for tag in tags:
+        print('Retrieving:', namelist[i-1])
+
     
     #print(tag[i].get('href', None))  
     #print(tag.contents[3])
