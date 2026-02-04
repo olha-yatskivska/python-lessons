@@ -13,14 +13,8 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter - ')
-try:
-    html = urllib.request.urlopen(url, context=ctx).read()
-    soup = BeautifulSoup(html, 'html.parser')
-except:
-  print("File cannot be opened:", url)
-  quit()
 
-# Retrieve all of the anchor tags
+
 i = input('Enter count:')
 try: 
     i = int(i)
@@ -35,10 +29,17 @@ except:
     print('Position must be a number')
     quit()
 n = 0
-while n > = j:
+while n < i:
+    try:
+        html = urllib.request.urlopen(url, context=ctx).read()
+        soup = BeautifulSoup(html, 'html.parser')
+    except:
+        print("File cannot be opened:", url)
+        quit()
+        
     tags = soup('a')
     for tag in tags:
-        print('Retrieving:', namelist[i-1])
+    print('Retrieving:', namelist[j-1])
 
     
     #print(tag[i].get('href', None))  
