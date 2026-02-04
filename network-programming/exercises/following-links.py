@@ -22,8 +22,21 @@ except:
 
 # Retrieve all of the anchor tags
 namelist = list()
+
 i = input('Enter count:')
+try: 
+    i = int(i)
+except: 
+    print('Count must be a number')
+    quit()
+    
 j = input('Enter position:')
+try: 
+    j = int(j)
+except:
+    print('Position must be a number')
+    quit()
+    
 tags = soup('a')
 for tag in tags:
     # Look at the parts of a tag
