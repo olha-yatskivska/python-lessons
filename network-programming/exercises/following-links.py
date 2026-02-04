@@ -34,7 +34,7 @@ while n < i:
         soup = BeautifulSoup(html, 'html.parser')
         tags = soup('a')
         for tag in tags:
-            url = tags[j-1]
+            url = tag[j-1].get('href', None)
         n = n + 1 
         
     except:
