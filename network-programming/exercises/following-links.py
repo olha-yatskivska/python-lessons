@@ -42,7 +42,7 @@ while n < i:
     except:
         print("File cannot be opened:", url)
         quit()
-    print('Retrieving:', newurl.contents[0])
+    print('Retrieving:', target_tag.contents[0])
         
     
     #print(tag[i].get('href', None))  
