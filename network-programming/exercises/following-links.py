@@ -17,6 +17,15 @@ html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
 # Retrieve all of the anchor tags
+namelist = list()
 tags = soup('a')
 for tag in tags:
-    print(tag.get('href', None))
+    i = input('Enter count:')
+    #j = input('Enter position:')
+    #link = tag[i].get('href', None)
+    #name = int(tag.contents[0])
+   
+    #namelist.append(name)
+    
+    print(tag[i].get('href', None))
+#print('Retrieving:', name)
