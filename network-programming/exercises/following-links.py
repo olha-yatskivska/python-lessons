@@ -39,7 +39,8 @@ while n < i:
         
     tags = soup('a')
     for tag in tags:
-        print('Retrieving:', tag[j-1].contents[0])
+        newurl = tag[j-1].get('href', None)
+        print('Retrieving:', tag[j-1])
 
     
     #print(tag[i].get('href', None))  
