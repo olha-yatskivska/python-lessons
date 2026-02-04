@@ -36,12 +36,12 @@ while n < i:
     except:
         print("File cannot be opened:", url)
         quit()
-        
+
     tags = soup('a')
     for tag in tags:
-        newurl = tag[j-1].get('href', None)
-        print('Retrieving:', tag[j-1])
-
+        newurl = tags[j-1]
+        print('Retrieving:', newurl.contents[0])
+        
     
     #print(tag[i].get('href', None))  
     #print(tag.contents[3])
