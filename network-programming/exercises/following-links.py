@@ -13,35 +13,25 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter - ')
+count = input('Enter count:')
+position = input('Enter position:')
 
-
-i = input('Enter count:')
-try: 
-    i = int(i)
-except: 
-    print('Count must be a number')
-    quit()
-    
-j = input('Enter position:')
-try: 
-    j = int(j)
-except:
-    print('Position must be a number')
-    quit()
 n = 0
-while n < i:
+while n < count:
     try:
         html = urllib.request.urlopen(url, context=ctx).read()
         soup = BeautifulSoup(html, 'html.parser')
+        tags = soup('a')
+        for tag in tags:
+            url = tags[position-1]
+        n = n + 1 
+        
     except:
         print("File cannot be opened:", url)
         quit()
+    
 
-    tags = soup('a')
-    for tag in tags:
-        newurl = tags[j-1]
-        print('Retrieving:', newurl.contents[0])
-    n = n + 1 
+print('Retrieving:', url.contents[0])
         
     
     #print(tag[i].get('href', None))  
