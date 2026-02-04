@@ -17,7 +17,7 @@ html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
 # Retrieve all of the anchor tags
-namelist = list()
+#namelist = list()
 tags = soup('a')
 for tag in tags:
     i = input('Enter count:')
