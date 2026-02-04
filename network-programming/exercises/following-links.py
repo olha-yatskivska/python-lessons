@@ -13,8 +13,12 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter - ')
-html = urllib.request.urlopen(url, context=ctx).read()
-soup = BeautifulSoup(html, 'html.parser')
+try:
+    html = urllib.request.urlopen(url, context=ctx).read()
+    soup = BeautifulSoup(html, 'html.parser')
+except:
+  print("File cannot be opened:", url)
+  quit()
 
 # Retrieve all of the anchor tags
 namelist = list()
@@ -23,6 +27,7 @@ j = input('Enter position:')
 tags = soup('a')
 for tag in tags:
     # Look at the parts of a tag
+    tag = tag.rstrip()
     name = tag.contents[0]
     namelist.append(name)
 print('Retrieving:', namelist[i])
