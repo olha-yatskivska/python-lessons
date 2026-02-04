@@ -33,16 +33,16 @@ while n < i:
         html = urllib.request.urlopen(url, context=ctx).read()
         soup = BeautifulSoup(html, 'html.parser')
         tags = soup('a')
-        for tag in tags:
-            url = tag[j-1].get('href', None)
+        target_tag = tags[j-1]
+        newurl = target_tag.get('href', None)
+            
         n = n + 1 
+        url = newurl
         
     except:
         print("File cannot be opened:", url)
         quit()
-    
-
-print('Retrieving:', url.contents[0])
+    print('Retrieving:', newurl.contents[0])
         
     
     #print(tag[i].get('href', None))  
