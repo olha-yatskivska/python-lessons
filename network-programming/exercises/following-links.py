@@ -41,7 +41,7 @@ while n < i:
     for tag in tags:
         newurl = tags[j-1]
         print('Retrieving:', newurl.contents[0])
-        n = n + 1 
+    n = n + 1 
         
     
     #print(tag[i].get('href', None))  
