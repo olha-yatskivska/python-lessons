@@ -18,9 +18,10 @@ soup = BeautifulSoup(html, 'html.parser')
 
 # Retrieve all of the anchor tags
 #namelist = list()
+i = input('Enter count:')
 tags = soup('a')
 for tag in tags:
-    i = input('Enter count:')
+    
     #j = input('Enter position:')
     #link = tag[i].get('href', None)
     #name = int(tag.contents[0])
