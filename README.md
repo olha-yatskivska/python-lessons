@@ -26,7 +26,7 @@ My collection of exercises and scripts from the [PY4E course](https://www.py4e.c
 
 ## **📂 Current & Next Steps**
 
-**Currently Learning:** [Chapter 14 (Using Web Services)](https://github.com/olha-yatskivska/python-lessons/tree/main/network-programming) 
+**Currently Learning:** [Chapter 14 (Using Web Services)]([https://github.com/olha-yatskivska/python-lessons/tree/main/network-programming](https://github.com/olha-yatskivska/python-lessons/blob/main/using-web-services.md)) 
 
 **Next:** Chapter 15 (Object-Oriented Programming) and Chapter 16 (Databases).
 
