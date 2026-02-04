@@ -39,7 +39,7 @@ while n < i:
         
     tags = soup('a')
     for tag in tags:
-        print('Retrieving:', namelist[j-1])
+        print('Retrieving:', tag[j-1].contents[0])
 
     
     #print(tag[i].get('href', None))  
