@@ -21,7 +21,7 @@ soup = BeautifulSoup(html, 'html.parser')
 i = input('Enter count:')
 tags = soup('a')
 for tag in tags:
-    print(tag[i].get('href', None))  
+    #print(tag[i].get('href', None))  
     print(tag.contents[3])
     #j = input('Enter position:')
     #link = tag[i].get('href', None)
