@@ -14,6 +14,17 @@
 *  White space is generally discarded on test elements/ We indent only to be readable
 * There is a hierarchical stucture within an XML document: simple element (node), complex element (node) with child tags
 * Within one simple node you can only have one text element.
+---
+## XML Schema
+* Description of the legal format of an XML document
+* Expressed in terms of constraints on the structure and content of documents
+* Often used to specify a "contract" between systems
+* If a paticular piece of XML meets the specification of the Schema - it is said to "validate"
+---
+
+## Many XML Schema Languages
+* Document Type Definition (DTD)
+* Standard GeneralizedbMarkup Language (ISO 8879:1986 SGML)
+* XML Schema from W3C - (XSD)
 
 
-## 
