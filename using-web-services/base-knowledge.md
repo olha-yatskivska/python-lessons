@@ -96,6 +96,6 @@
 [OpenStreetMap](https://www.openstreetmap.org/#map=6/52.02/19.14)
 
 ## Code Examples:
-[Heavily rate limited proxy of https://www.geoapify.com/ api](https://github.com/olha-yatskivska/python-lessons/blob/main/using-web-services/exercises/opengeo.py)
+* [Heavily rate limited proxy of https://www.geoapify.com/ api](https://github.com/olha-yatskivska/python-lessons/blob/main/using-web-services/exercises/opengeo.py)
 ---
 
