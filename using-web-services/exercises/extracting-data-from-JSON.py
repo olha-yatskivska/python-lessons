@@ -9,11 +9,11 @@ print('Retrieving', url)
 uh = urllib.request.urlopen(url)
 data = uh.read()
 
-info = json.loads(uh)
+info = json.loads(data)
 print('User count:', len(info))
 
-nums = list()
-for item in info:
-    print('count', item['count'])
-    print('Id', item['id'])
-    print('Attribute', item['x'])
+#nums = list()
+#for item in info:
+ #   print('count', item['count'])
+  #  print('Id', item['id'])
+   # print('Attribute', item['x'])
