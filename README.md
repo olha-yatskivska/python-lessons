@@ -22,13 +22,15 @@ My collection of exercises and scripts from the [PY4E course](https://www.py4e.c
 
 [**Chapter 12: Regular Expressions**](https://github.com/olha-yatskivska/python-lessons/tree/main/regular-expressions) - Using the re library for sophisticated pattern matching, extracting specific substrings from large datasets, and mastering special characters (meta-characters).
 
-[ **Chapter 13: Network Programming**](https://github.com/olha-yatskivska/python-lessons/tree/main/using-web-services) - This chapter covers how Python interacts with the web, moving beyond the browser to handle raw data transfer, urllib: built-in library for requesting and reading data from URLs, Beautiful Soup: A library used to parse and extract specific information from HTML/XML.
+[ **Chapter 13: Network Programming**](https://github.com/olha-yatskivska/python-lessons/tree/main/network-programming) - This chapter covers how Python interacts with the web, moving beyond the browser to handle raw data transfer, urllib: built-in library for requesting and reading data from URLs, Beautiful Soup: A library used to parse and extract specific information from HTML/XML.
+
+[ **Chapter 14: Using Web Services**](https://github.com/olha-yatskivska/python-lessons/blob/main/using-web-services.md) - This chapter focuses on structured data exchange between systems, moving from raw web pages to machine-readable formats like XML and JSON, which are the backbone of modern APIs.
 
 ## **📂 Current & Next Steps**
 
-**Currently Learning:** [Chapter 14 (Using Web Services)]([https://github.com/olha-yatskivska/python-lessons/tree/main/network-programming](https://github.com/olha-yatskivska/python-lessons/blob/main/using-web-services.md)) 
+**Currently Learning:** [Chapter 15 (Object-Oriented Programming)]
 
-**Next:** Chapter 15 (Object-Oriented Programming) and Chapter 16 (Databases).
+**Next:** Chapter 16 (Databases) and Chapter 17 (Data Visualization).
 
 ## **🛠️ Key Concepts Learned (QA Perspective)**
 
