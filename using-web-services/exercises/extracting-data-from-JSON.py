@@ -8,9 +8,10 @@ if len(url) < 1 :
 print('Retrieving', url)
 uh = urllib.request.urlopen(url)
 data = uh.read()
-
+print('User count:', len(data))
 info = json.loads(data)
-print('User count:', len(info))
+
+
 
 #nums = list()
 #for item in info:
