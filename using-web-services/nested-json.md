@@ -1,5 +1,15 @@
 # Handling Nested JSON Structures with Python Dictionaries
 
+> 💡 Pro-Tip: The "Brackets Rule" for JSON Navigation
+> Technical Rule of Thumb: Always identify the bracket type to determine your data access strategy.
+>
+> 1. Curly Braces { } (Object/Dictionary): Use a Key in quotes to access the value.
+> Syntax: data['key_name']
+>
+> 2. Square Brackets [ ] (Array/List): Use a Loop to iterate through multiple items.
+> Syntax: for item in data:
+---
+
 ## The Concept of Nesting (JSON Mapping)
 * Nesting occurs when a dictionary contains other dictionaries or lists as values.
 * This is exactly how JSON data is structured in API responses.
