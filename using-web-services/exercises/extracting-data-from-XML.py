@@ -16,6 +16,8 @@ nums = list()
 for result in counts:
     # Debug print the data :)
     print(result.text)
+    num=int(result.text)
+    nums.append(num)
 
 print('Count:', len(nums))
 print('Sum:', sum(nums))
