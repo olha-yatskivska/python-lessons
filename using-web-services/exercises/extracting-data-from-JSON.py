@@ -13,8 +13,12 @@ info = json.loads(data)
 print('User count:', len(info['comments']))
 
 
-#nums = list()
-#for item in info:
- #   print('count', item['count'])
-  #  print('Id', item['id'])
+nums = list()
+for item in info['comments']:
+    count=item['count']
+    nums.append(int(count))
+
+print('Count:', len(nums))
+print('Sum:', sum(nums))
+
    # print('Attribute', item['x'])
