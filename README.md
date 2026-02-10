@@ -26,11 +26,13 @@ My collection of exercises and scripts from the [PY4E course](https://www.py4e.c
 
 [ **Chapter 14: Using Web Services**](https://github.com/olha-yatskivska/python-lessons/blob/main/using-web-services.md) - This chapter focuses on structured data exchange between systems, moving from raw web pages to machine-readable formats like XML and JSON, which are the backbone of modern APIs.
 
+[ **Chapter 15: Object-Oriented Programming**](https://github.com/olha-yatskivska/python-lessons/tree/main/object-oriented-programming)
+
 ## **📂 Current & Next Steps**
 
-**Currently Learning:** [Chapter 15 (Object-Oriented Programming)]
+**Currently Learning:** Chapter 16 (Databases)
 
-**Next:** Chapter 16 (Databases) and Chapter 17 (Data Visualization).
+**Next:** Chapter 17 (Data Visualization).
 
 ## **🛠️ Key Concepts Learned (QA Perspective)**
 
