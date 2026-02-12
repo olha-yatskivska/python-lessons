@@ -57,5 +57,23 @@ In a professional QA role, the terminal is used for more than just Git:
 | `Tab` | **Auto-complete**: Type the first letters of a file and press Tab to finish it! |
 | `Up Arrow` | Cycle through your previous commands (saves time typing). |
 
+## 🗄️ SQLite 
+| Shortcut | Action |
+| :--- | :--- |
+| `sqlite3 --version` |  Checks the installed SQLite version in the terminal |
+| `sqlite3 trackdb.sqlite` | Opens the trackdb.sqlite database file (or creates it if it doesn't exist)|
+| `sqlite> .databases` |  Lists the names and files of attached databases |
+| `sqlite> .tables` | Lists all tables in the current database|
+| `sqlite> .schema <table_name>` | Shows the CREATE statement for a specific table (useful for checking structure) |
+| `sqlite> .quit` | Exits the SQLite prompt and returns to the standard terminal|
+
+
+##  📊 Output Formatting (For Better Readability)
+| Shortcut | Action |
+| :--- | :--- |
+| `sqlite> .headers on` |  Displays column names at the top of query results |
+| `sqlite> .mode column` | Aligns data into neat columns (essential for manual data analysis)|
+
+
 > [!TIP]
 > Use the **Up Arrow** key to find a long command you typed 5 minutes ago instead of typing it again!
