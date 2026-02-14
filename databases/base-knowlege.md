@@ -180,6 +180,13 @@ SELECT User.name, Member.role, Course.title
 ```
 
 ## Additional SQL Topics
-* Indexes
+* **Indexes** improve access perfomance for things like string fields
+* **Constraints** on data NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK 
+* **Transactions** allow SQL operations to be grouped and done as a unit
 
+---
+## Summary
+* Relational databases allow us to scale to very large amounts of data
+* The key is to have one copy of any data element and use relations and joins to link the data to multiple places
+* This greatly reduces the amount of data which much be scanned when doing complex operations across large amounts of data
 
