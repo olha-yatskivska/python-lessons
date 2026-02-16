@@ -53,7 +53,7 @@ for entry in json_data:
     cur.execute('''INSERT OR IGNORE INTO Course (title)
         VALUES ( ? )''', ( title, ) )
     cur.execute('SELECT id FROM Course WHERE title = ? ', (title, ))
-    course_id = cur.fetchone()[1]
+    course_id = cur.fetchone()[0]
 
     cur.execute('''INSERT OR REPLACE INTO Member
         (user_id, course_id) VALUES ( ?, ? )''',
