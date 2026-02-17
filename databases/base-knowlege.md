@@ -111,6 +111,8 @@ INSERT INTO Track (title, rating, len, count, album_id, genre_id)
 * The JOIN operation links across several tables as part of a select operation
 * You must tell the JOIN how to use the keys that make the connection between the tables using an ON clause
 * Joining two tables without an ON clause gives all possible combinations of rows
+* [Worked Example: Roster.py](https://github.com/olha-yatskivska/python-lessons/tree/main/databases/exercises/roster/roster)
+* [Homework_Example](https://github.com/olha-yatskivska/python-lessons/tree/main/databases/exercises/roster-homework)
 
 > What we want to see | The tables whoch hold the data | How the tables are linked
 
