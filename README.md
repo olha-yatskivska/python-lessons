@@ -26,13 +26,13 @@ My collection of exercises and scripts from the [PY4E course](https://www.py4e.c
 
 [ **Chapter 14: Using Web Services**](https://github.com/olha-yatskivska/python-lessons/blob/main/using-web-services.md) - This chapter focuses on structured data exchange between systems, moving from raw web pages to machine-readable formats like XML and JSON, which are the backbone of modern APIs.
 
-[ **Chapter 15: Object-Oriented Programming**](https://github.com/olha-yatskivska/python-lessons/tree/main/object-oriented-programming)
+[ **Chapter 15: Object-Oriented Programming**](https://github.com/olha-yatskivska/python-lessons/tree/main/object-oriented-programming)  - An introduction to OOP principles, covering the lifecycle of an object from construction to implementation. Explore the relationships between classes, attributes, and methods, and master the use of inheritance to build scalable and reusable code structures. 
+
+[ **Chapter 16: Databases**](https://github.com/olha-yatskivska/python-lessons/tree/main/databases) - This chapter covers the CRUD (Create, Read, Update, Delete) lifecycle and demonstrates how to execute essential SQL commands directly within a Python environment to interact with persistent data using SQLite.
 
 ## **📂 Current & Next Steps**
 
-**Currently Learning:** Chapter 16 (Databases)
-
-**Next:** Chapter 17 (Data Visualization).
+**Currently Learning:** [ **Chapter 17: Data Visualization**](https://github.com/olha-yatskivska/python-lessons/tree/main/data-vizualization) 
 
 ## **🛠️ Key Concepts Learned (QA Perspective)**
 
@@ -60,7 +60,7 @@ As a Test Analyst, mastering network programming transforms how I approach techn
   * [Grey Box Testing:](https://github.com/olha-yatskivska/python-lessons/blob/main/network-programming/exercises/http-request.py) Sockets and protocols allow me to verify communication between the Client and Server, helping distinguish between UI rendering bugs and backend connection failures. 
   * [Automated Data Verification:](https://github.com/olha-yatskivska/python-lessons/blob/main/network-programming/exercises/beautiful-soup.py) Using Beautiful Soup, I can automate the verification of page content, meta tags, and broken links without the overhead of a full browser automation tool (e.g., checking if all <img> tags have alt attributes)..
   * [API Fundamentals:](https://github.com/olha-yatskivska/python-lessons/blob/main/network-programming/exercises/urllinks.py) Understanding HTTP via urllib is the foundation for API testing, allowing me to analyze status codes, headers, and payloads.
-
+  * Test Automation (Page Object Model): In automation (like Selenium or Playwright), use OOP every day. A "Page" is a Class, the buttons are Attributes, and clicking them is a Method. Understanding Inheritance allows you to create a "BasePage" so you don't have to rewrite the same code for every test.
 
 ### **🧪 Data Manipulation**
 
@@ -69,6 +69,11 @@ As a Test Analyst, mastering network programming transforms how I approach techn
 [**File Parsing:**](https://github.com/olha-yatskivska/python-lessons/tree/main/files) Looking for specific patterns (like "Errors" or "Failures") in large system logs.
 
 [**Cleaning Data:**](https://github.com/olha-yatskivska/python-lessons/blob/main/strings/exercises/stripping-whitespace.py) Using .rstrip() and .strip() to ensure data consistency during comparisons.
+
+### [CRUD in SQL:](https://github.com/olha-yatskivska/python-lessons/tree/main/databases/exercises)
+ * **Test Data Setup:** Instead of manually clicking through a form 100 times, you can use CREATE (Insert) commands to inject 100 test users into the database instantly.
+ * Data Validation (The "Truth" Check): You might see a "Success" message on a website, but did the data actually reach the database? A Test Analyst uses READ commands to verify that the UI and the Database are in sync.
+ * Destructive Testing: Using UPDATE and DELETE allows you to simulate edge cases, such as "What happens to an order if the user profile is deleted mid-transaction?"
 
 
 
