@@ -1,5 +1,5 @@
-i = 0
-while i < 3:
-       print(i)
-       i++
-       print(i+1)
+numbers = [3, 7, 2, 8, 5]
+for i, num in enumerate(numbers):
+   if i == num:
+       break
+   print(num, end=' ')
