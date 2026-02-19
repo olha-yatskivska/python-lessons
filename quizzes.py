@@ -1,3 +1,3 @@
-a = ['Geeks', 'for', 'Geeks'] 
-b = [i[0].upper() for i in a] 
+a = [x for x in range(5)] 
+b = [x for x in range(7) if x in a and x%2==0] 
 print(b) 
