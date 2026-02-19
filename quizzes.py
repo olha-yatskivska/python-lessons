@@ -1,5 +1,2 @@
-d = dict() 
-for x in enumerate(range(2)): 
-	d[x[0]] = x[1] 
-	d[x[1]+7] = x[0] 
-print(d) 
+d1 = {'GFG' : 1, 'Google' : 2, 'GFG1' : 3} 
+print(d1['GFG'])
