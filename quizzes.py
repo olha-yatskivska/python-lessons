@@ -1,2 +1,2 @@
-li = ['a', 'b', 'c'] * -3
-print(li)
+li = ['Harsh', 'Pratik', 'Bob', 'Dhruv'] 
+print (li[1][-1]) 
