@@ -1,3 +1,3 @@
-a = 'Geeks 22536 for 445 Geeks'
-b = [x for x in (int(x) for x in a if x.isdigit()) if x%2 == 0] 
+a = ['Geeks', 'for', 'Geeks'] 
+b = [i[0].upper() for i in a] 
 print(b) 
