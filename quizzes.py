@@ -1,8 +1,9 @@
-li = [2e-04, 'a', False, 87] 
-tup = (6.22, 'boy', True, 554) 
-for i in range(len(li)): 
-	if li[i]: 
-		li[i] = li[i] + tup[i] 
-	else: 
-		tup[i] = li[i] + li[i] 
-		break
+import sys 
+tup = tuple() 
+print(sys.getsizeof(tup), end = " ") 
+tup = (1, 2) 
+print(sys.getsizeof(tup), end = " ") 
+tup = (1, 3, (4, 5)) 
+print(sys.getsizeof(tup), end = " ") 
+tup = (1, 2, 3, 4, 5, [3, 4], 'p', '8', 9.777, (1, 3)) 
+print(sys.getsizeof(tup)) 
