@@ -1,3 +1,3 @@
-a = [x for x in (x for x in 'Geeks 22966 for Geeks' if x.isdigit()) if
-(x in ([x for x in range(20)]))] 
-print(a) 
+a = 'Geeks 22536 for 445 Geeks'
+b = [x for x in (int(x) for x in a if x.isdigit()) if x%2 == 0] 
+print(b) 
