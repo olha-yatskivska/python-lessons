@@ -1,5 +1,3 @@
-numbers = [3, 7, 2, 8, 5]
-for i, num in enumerate(numbers):
-   if i == num:
-       break
-   print(num, end=' ')
+numbers = [1, 2, 3, 4, 5]
+for i in range(len(numbers) - 1, -1, -1):
+   print(numbers[i], end=' ')
