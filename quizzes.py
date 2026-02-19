@@ -1,11 +1,13 @@
-d1 = {'Google' : 1, 
-			'Facebook' : 2, 
-			'Microsoft' : 3
+d = {'GFG' : 'geeksforgeeks.org', 
+			'google' : 'google.com', 
+			'facebook' : 'facebook.com'
 			} 
-d2 = {'GFG' : 1, 
-			'Microsoft' : 2, 
-			'Youtube' : 3
-			} 
-d1.update(d2); 
-for key, values in d1.items(): 
-	print(key, values , end=" ") 
+del d['google']; 
+for key, values in d.items(): 
+	print(key, end=" ") 
+d.clear(); 
+for key, values in d.items(): 
+	print(key) 
+del d; 
+for key, values in d.items(): 
+	print(key) 
