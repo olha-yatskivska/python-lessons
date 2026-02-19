@@ -1,5 +1,2 @@
-nameList = ['Harsh', 'Pratik', 'Bob', 'Dhruv'] 
-
-pos = nameList.index("GeeksforGeeks") 
-
-print (pos * 3)
+li = ['a', 'b', 'c', 'd', 'e'] 
+print(li[10:] )
