@@ -1,9 +1,9 @@
-x = 1
-while x < 6:
-   print(x, end=" ")
-   x += 1
-   if x == 4:
-      continue
+num = 10
+while num > 0:
+   if num % 2 == 0:
+       print(num, end=" ")
+   num -= 1
+ 
    
    
  
