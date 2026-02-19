@@ -1,9 +1,8 @@
-li = [3, 1, 2, 4] 
-tup = ('A', 'b', 'c', 'd') 
-li.sort() 
-counter = 0
-for x in tup: 
-	li[counter] += int(x) 
-	counter += 1
-	break
-print(li) 
+li = [2e-04, 'a', False, 87] 
+tup = (6.22, 'boy', True, 554) 
+for i in range(len(li)): 
+	if li[i]: 
+		li[i] = li[i] + tup[i] 
+	else: 
+		tup[i] = li[i] + li[i] 
+		break
