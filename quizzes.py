@@ -1,3 +1,3 @@
-a = [x for x in range(5)] 
-b = [x for x in range(7) if x in a and x%2==0] 
-print(b) 
+li = [2, 3, 9] 
+li = [[x for x in[li]] for x in range(3)] 
+print (li) 
