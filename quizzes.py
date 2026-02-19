@@ -1,4 +1,3 @@
-a = []
-a.append([1, [2, 3], 4])
-a.extend([7, 8, 9])
-print(a[0][1][1] + a[2])
+a = [x for x in (x for x in 'Geeks 22966 for Geeks' if x.isdigit()) if
+(x in ([x for x in range(20)]))] 
+print(a) 
