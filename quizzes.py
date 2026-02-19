@@ -1,2 +1,13 @@
-d1 = {'GFG' : 1, 'Google' : 2, 'GFG1' : 3} 
-print(d1['GFG'])
+d = {} 
+
+def addTodict(country): 
+	if country in d: 
+		d[country] += 1
+	else: 
+		d[country] = 1
+
+addTodict('China') 
+addTodict('Japan') 
+addTodict('china') 
+
+print (len(d))
