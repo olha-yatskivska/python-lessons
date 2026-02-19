@@ -1,2 +1,5 @@
-tup = (1, 2, 3) 
-print(2 * tup) 
+s = 'geeks' 
+a, b, c, d, e = s 
+b = c = '*'
+s = (a, b, c, d, e) 
+print(s) 
