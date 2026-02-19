@@ -1,3 +1,2 @@
-li = [2, 3, 9] 
-li = [[x for x in[li]] for x in range(3)] 
-print (li) 
+li = ['a', 'b', 'c'] * -3
+print(li)
