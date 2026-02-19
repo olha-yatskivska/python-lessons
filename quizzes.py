@@ -1,5 +1,3 @@
-def addToList(a): 
-	a += [10] 
-b = [10, 20, 30, 40] 
-addToList(b) 
-print (len(b)) 
+li = [1, 2, 3, 4] 
+li.append([5,6,7,8]) 
+print(li) 
