@@ -1,2 +1,2 @@
-a = ['python', 'learning', '@', 'Geeks', 'for', 'Geeks'] 
-print(a[0:6:2])
+a = [1, 2, 3, None, (1, 2, 3, 4, 5), ['Geeks', 'for', 'Geeks']] 
+print(len(a))
