@@ -1,3 +1,3 @@
-a = {} 
-a.fromkeys(['a', 'b', 'c', 'd'], 98) 
-print (a) 
+d = {1 : {'A' : {1 : "A"}, 2 : "B"}, 3 :"C", 'B' : "D", "D": 'E'} 
+print(d[d[d[1][2]]], end = " ") 
+print(d[d[1]["A"][2]]) 
