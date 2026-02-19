@@ -1,5 +1,6 @@
-# statement 1
-li = range(100, 110) 
+def gfg(x,li=[]): 
+	for i in range(x): 
+		li.append(i*i) 
+	print(li) 
 
-# statement 2
-print (li.index(105))
+gfg(3,[3,2,1])
