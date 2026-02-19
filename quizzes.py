@@ -1,4 +1,5 @@
-a = [1998, 2002] 
-b = [2014, 2016] 
+# statement 1
+li = range(100, 110) 
 
-print ((a + b)*2)
+# statement 2
+print (li.index(105))
