@@ -1,3 +1,5 @@
-x = [1, 2, 3, 4]
-y = filter(lambda a: a % 2 == 0, x)
-print(list(y))
+i = 0
+while i < 3:
+       print(i)
+       i++
+       print(i+1)
