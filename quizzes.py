@@ -1,13 +1,5 @@
-d = {} 
-
-def addTodict(country): 
-	if country in d: 
-		d[country] += 1
-	else: 
-		d[country] = 1
-
-addTodict('China') 
-addTodict('Japan') 
-addTodict('china') 
-
-print (len(d))
+d = {1:'1', 2:'2', 3:'3'} 
+del d[1] 
+d[1] = '10'
+del d[2] 
+print (len(d) )
