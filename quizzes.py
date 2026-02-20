@@ -1,3 +1,6 @@
-y = 8
-z = lambda x : x * y
-print(z(6))
+def func(a, b=None):
+    b.append(a)
+    return b
+
+print(func(1))
+print(func(2))
