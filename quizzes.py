@@ -1,6 +1,9 @@
-def func(a, b=None):
-    b.append(a)
-    return b
+x = 10
 
-print(func(1))
-print(func(2))
+def func():
+   global x
+   x = 5
+   print(x)
+
+func()
+print(x)
