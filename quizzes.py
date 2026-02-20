@@ -1,2 +1,1 @@
-li = ['a', 'b', 'c', 'd']
-print("".join(li))
+print(chr(ord('A'))) 
